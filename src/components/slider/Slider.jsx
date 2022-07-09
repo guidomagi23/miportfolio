@@ -7,19 +7,27 @@ import "./Slider.css"
 const Slider = () => {
   return (
     <div className='carousel-container'>
-        <div className='carousel-tittle'>
-            <h2>Mis Proyectos</h2>
-        </div>
-        <Carousel
-            arrows
-            slidesPerPage={3}
-            infinite
-            animationSpeed={200}
-            centered
-            offset={50}
-            itemWidth={400}
-            slides={Slides}
-        />
+      <div className='carousel-tittle'>
+        <h2>Mis Proyectos</h2>
+      </div>
+      <Carousel 
+        arrows
+        slidesPerPage={3}
+        infinite
+        animationSpeed={200}
+        centered
+        offset={50}
+        itemWidth={400}
+        slides={Slides}
+        breakpoints={{
+          960: {
+            slidesPerPage: 1,
+            arrows: false,
+            itemWidth: 250,
+          }
+        }}
+
+      />
     </div>
   )
 }
