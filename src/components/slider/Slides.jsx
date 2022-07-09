@@ -7,7 +7,7 @@ import portfolioImagen from "../../media/portfolioImagen.png";
 
 const slidesInfo = [
     {
-        img: biesImagen2021,        
+        img: biesImagen2021,
         alt: "Bies 2021",
         desc: "Versión 2.0"
     },

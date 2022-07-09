@@ -5,10 +5,10 @@ import coverVideo from '../../media/coverVideo.mp4'
 const Cover = () => {
   return (
     <div className='cover-container'>
-        <video className='video' src={coverVideo} autoPlay loop muted/>
-        <h1>Guido Magi</h1>
-        <p>Desarrollador de Software</p>
-        
+      <video className='video' src={coverVideo} autoPlay loop muted />
+      <h1>Guido Magi</h1>
+      <p>Desarrollador de Software</p>
+
     </div>
   )
 }

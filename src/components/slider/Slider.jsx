@@ -10,7 +10,7 @@ const Slider = () => {
       <div className='carousel-tittle'>
         <h2>Mis Proyectos</h2>
       </div>
-      <Carousel 
+      <Carousel
         arrows
         slidesPerPage={3}
         infinite
