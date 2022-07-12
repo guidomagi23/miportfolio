@@ -17,10 +17,16 @@ const Footer = () => {
                 > Linkedin
                 </a>
 
+                <a className='fas fa-envelope btn'
+                    href='mailto:guidomagi23@gmail.com'                    
+                > Gmail
+                </a>
+
 
             </div>
             <div className='footer-contact'>
                 <h2>Contacto</h2>
+                <p> Cualquier oferta o duda podes contactarme mediante Linkedin o Gmail. Gracias. </p>
             </div>
             <div className='footer-sns'>
                 <div className='design-by'>
