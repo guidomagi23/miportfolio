@@ -7,13 +7,15 @@ const Footer = () => {
         <footer className='footer'>
             <div className='footer-info'>
                 <h1>Mis Datos</h1>
-                <button className='fas fa-address-card btn cv'>
-                    <a href={cvguido}
-                        className="btn-text"
-                        target='_blank'
-                        rel="noopener noreferrer"
-                    >Curriculum Vitae</a>
-                </button>
+                <a className='fas fa-address-card btn'
+                    href={cvguido}
+                > Curriculum Vitae
+                </a>
+
+                <a className='fab fa-linkedin btn'
+                    href='https://www.linkedin.com/in/guidomagi/'
+                > Linkedin
+                </a>
 
 
             </div>
