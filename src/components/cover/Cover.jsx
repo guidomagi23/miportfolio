@@ -7,7 +7,8 @@ const Cover = () => {
     <div className='cover-container'>
       <video className='video' src={coverVideo} autoPlay loop muted />
       <h1>Guido Magi</h1>
-      <p>Desarrollador de Software</p>
+      <h2>Desarrollador de Software</h2>
+      <h3>React.JS | JavaScript | CSS | HTML | SQL | Java</h3>
 
     </div>
   )
