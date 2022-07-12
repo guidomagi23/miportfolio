@@ -9,6 +9,7 @@ const Footer = () => {
                 <h1>Mis Datos</h1>
                 <button className='fas fa-address-card btn cv'>
                     <a href={cvguido}
+                        className="btn-text"
                         target='_blank'
                         rel="noopener noreferrer"
                     >Curriculum Vitae</a>
