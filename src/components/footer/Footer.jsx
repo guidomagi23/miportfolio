@@ -1,12 +1,20 @@
-import React from 'react'
-import "./Footer.css"
+import React from 'react';
+import "./Footer.css";
+import cvguido from "../../media/cvguido.pdf";
 
 const Footer = () => {
     return (
         <footer className='footer'>
             <div className='footer-info'>
                 <h1>Mis Datos</h1>
-          
+                <button className='fas fa-address-card btn cv'>
+                    <a href={cvguido}
+                        target='_blank'
+                        rel="noopener noreferrer"
+                    >Curriculum Vitae</a>
+                </button>
+
+
             </div>
             <div className='footer-contact'>
                 <h2>Contacto</h2>
