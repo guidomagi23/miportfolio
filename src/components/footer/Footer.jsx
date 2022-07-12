@@ -24,10 +24,6 @@ const Footer = () => {
 
 
             </div>
-            <div className='footer-contact'>
-                <h2>Contacto</h2>
-                <p> Cualquier oferta o duda podes contactarme mediante Linkedin o Gmail. Gracias. </p>
-            </div>
             <div className='footer-sns'>
                 <div className='design-by'>
                     Desarrollado por Guido Magi
