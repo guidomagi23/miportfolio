@@ -26,12 +26,7 @@
     
 }
 
-.footer-contact {
-    font-size: 22px;
-    padding: 100px 0 30px 50px;
-    width: 70%;
-    margin: 0 auto;
-}
+
 
 .footer-sns {
     width: 70%;
@@ -98,6 +93,13 @@ a:link, a:visited, a:active {
     
 }
 
+.footer-contact {
+    font-size: 22px;
+    padding: 100px 0 30px 50px;
+    width: 70%;
+    margin: 0 auto;
+}
+
 .footer-contact > p{
     font-size: 20px;
     padding: 10px 20px 50px 20px;
@@ -122,18 +124,18 @@ a:link, a:visited, a:active {
 
     .footer-contact {
         font-size: 16px;
-        padding: 100px 0 30px 0;
-        text-align: center;
+        padding: auto;
+        text-align: left;
     }
 
     .footer-sns {
         display: table;
-        padding: 0;
+        padding: 0 50px 0 50px;
         text-align: center;
     }   
 
     .design-by {
-        padding: 0 0 50px 0;
+        padding: 0 0 0px 0;
         text-align: center;
     }
 
