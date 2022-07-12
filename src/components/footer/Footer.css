@@ -41,16 +41,17 @@
 }
 
 .sns-links {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    padding: 0 100px 0 100px;
 }
 
 .linkedin,
 .github {
     color: white;
-    font-size: 30px;
-    padding: 10px;
+    font-size: 28px;
+    padding: 8px;
     border-radius: 50%;
     background-color: #1c1c1c;
     transition: 0.5s;
@@ -67,6 +68,7 @@
     font-size: 20px;
     padding: 10px;
     color: white;
+    padding: 0 50px 0 50px;
 }
 
 @media only screen and (max-width: 960px) {
@@ -83,13 +85,17 @@
     }
 
     .footer-sns {
-        grid-template-columns: 1fr;
+        display: table;
         padding: 0;
         text-align: center;
-    }
+    }   
 
     .design-by {
         padding: 0 0 50px 0;
         text-align: center;
+    }
+
+    .sns-links {
+        padding: 0 60px 0 60px;
     }
 }
