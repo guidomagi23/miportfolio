@@ -6,6 +6,7 @@ import biesImagen2021 from "../../media/biesImagen2021.png";
 import portfolioImagen from "../../media/portfolioImagen.png";
 import biesVideo2020 from "../../media/biesVideo2020.mp4";
 import notiesVideo from "../../media/notiesVideo.mp4";
+import biesVideo2022 from "../../media/biesVideo2022.mp4";
 
 
 const slidesInfo = [
@@ -14,7 +15,7 @@ const slidesInfo = [
         alt: "Bies 2022",
         desc: "Versión 2.0",
         link: "https://github.com/guidomagi23/Bies22",
-        video: ""
+        video: biesVideo2022
     },
     {
         img: biesImagen2020,
