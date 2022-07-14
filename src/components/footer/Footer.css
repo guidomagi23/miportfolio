@@ -1,10 +1,10 @@
 .footer {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: black;
     color: white;
-    padding-top: 180px;
-    position: fixed;
+    
+    
     z-index: -2;
     bottom: 0;
     left: 0;
@@ -19,11 +19,14 @@
     grid-template-columns: repeat(1,  1fr);
     gap: 20px;
     max-width: 40%;
+    text-align: center;
 }
 
 .footer-info>h1 {
     padding-bottom: 15px;
-    
+    font-size: 30px;
+    display: flex;
+    justify-content: center;    
 }
 
 
@@ -64,12 +67,7 @@ a:link, a:visited, a:active {
     text-decoration:none;
 }
 
-.sns-links {
-    display: flex;
-    justify-content: space-evenly ;
-    align-items: center;
-    padding: 0 100px 0 100px;
-}
+
 
 .github , .linkedin {
     background-color:#000000;  
@@ -87,10 +85,19 @@ a:link, a:visited, a:active {
 }
 
 .design-by {
-    font-size: 20px;
-    padding: 10px 0 10px 50px;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 0 5px 0;   
     color: white;
     
+}
+
+.sns-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0 5px 0;
 }
 
 @media only screen and (max-width: 960px) {

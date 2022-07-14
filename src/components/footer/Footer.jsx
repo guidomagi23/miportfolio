@@ -18,16 +18,15 @@ const Footer = () => {
                 </a>
 
                 <a className='fas fa-envelope btn'
-                    href='mailto:guidomagi23@gmail.com'                    
+                    href='mailto:guidomagi23@gmail.com'
                 > Gmail
                 </a>
 
 
-            </div>
-            <div className='footer-sns'>
                 <div className='design-by'>
                     Desarrollado por Guido Magi
                 </div>
+
                 <div className='sns-links'>
                     <a href='https://www.linkedin.com/in/guidomagi/' target="_blank" rel='noreferrer'>
                         <i className='fab fa-linkedin linkedin'></i>
@@ -36,8 +35,8 @@ const Footer = () => {
                         <i className='fab fa-github github'></i>
                     </a>
                 </div>
-            </div>
 
+            </div>
         </footer>
     )
 }

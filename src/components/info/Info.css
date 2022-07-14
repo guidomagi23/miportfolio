@@ -3,7 +3,8 @@
     height: 300px;
     background-color: white;
     color: black;
-    margin-bottom: 100vh;
+    z-index: -2;
+
 }
 
 .info {
