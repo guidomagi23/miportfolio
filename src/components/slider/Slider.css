@@ -30,11 +30,6 @@
     display: flex;  
 }
 
-.slide-container > .img {
-    object-fit: contain;
-    transition: 0.5s;
-}
-
 .slide-container:hover > .img {
     transform: scale(1.1);
     opacity: 0.7;
@@ -120,11 +115,10 @@
         font-size: 25px;
         padding: 0 0 0 0;
     }
- 
     
     .img {
-        object-fit: contain;
-        transition: 0.5s;    
+        object-fit: scale-down;  
+        transition: none;  
     }
     
     .slide-container {
@@ -136,10 +130,14 @@
         display: flex;
     }
 
+    .slide-container > .img {
+        object-fit: scale-down;
+        transition: none;
+    }
+
     .slide-container:hover > .img {
-        transform: none;
-        opacity: 0.7;
-        
+        transform:none;
+        opacity: 0.7;        
     }
     
 
