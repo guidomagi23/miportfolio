@@ -130,11 +130,6 @@
         display: flex;
     }
 
-    .slide-container > .img {
-        object-fit: scale-down;
-        transition: none;
-    }
-
     .slide-container:hover > .img {
         transform:none;
         opacity: 0.7;        
