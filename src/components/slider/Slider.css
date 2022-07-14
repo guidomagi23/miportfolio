@@ -27,7 +27,7 @@
 .img {
     object-fit: contain;
     transition: 0.5s;
-    display: flex;
+    display: flex;  
 }
 
 .slide-container > .img {
@@ -106,7 +106,7 @@
 }
 
 .BrainhubCarousel__arrows:hover>span {
-    border-color: black !important;
+    border-color: rgb(255, 3, 3) !important;
 }
 
 @media only screen and (max-width: 960px) {
@@ -118,16 +118,15 @@
         width: 100%;
         text-align: center;
         font-size: 25px;
-        padding: 50px 0 50px 0;
+        padding: 0 0 0 0;
     }
-
-    .slide-container {
-        width: 100%;
-        height: auto;
-        padding: 0;
-
+ 
+    
+    .img {
+        object-fit: contain;
+        transition: 0.5s;    
     }
-
+    
     .slide-container {
         height: 50%;
         border-radius: 40px;
@@ -136,26 +135,12 @@
         cursor: pointer;
         display: flex;
     }
-    
-    .img {
-        object-fit: contain;
-        transition: 0.5s;
-        display: flex;
-    }
 
-    .carousel-tittle {
-        width: 100%;
-        text-align: center;
-        font-size: 25px;
-        padding: 50px 0 50px 0;
+    .slide-container:hover > .img {
+        transform: none;
+        opacity: 0.7;
+        
     }
-
-    .carousel-container {
-        align-items: center;
-        background-color: black;
-        padding: 0px 0 0px 0;    
-    }
-    
     
 
 }
