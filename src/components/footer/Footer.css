@@ -3,19 +3,20 @@
     height: 100%;
     background-color: black;
     color: white;
-    
-    
+
+
     z-index: -2;
     bottom: 0;
     left: 0;
 }
 
-.btn-texto {
-    color: white;
+.footer-info>a {
+    color: rgb(255, 255, 255);
     font-size: 23px;
     font-weight: bold;
     text-align: center;
 }
+
 
 .footer-info {
     font-size: 25px;
@@ -33,7 +34,7 @@
     padding-bottom: 15px;
     font-size: 30px;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
 }
 
 
@@ -50,42 +51,51 @@
     align-items: center;
 }
 
-.btn{
-    -webkit-transition-duration: 0.4s; 
+.btn {
+    -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     background-color: rgb(0, 0, 0);
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
-    padding: 20px 40px 20px 40px; 
+    padding: 20px 40px 20px 40px;
     font-size: 20px;
-    margin: 0 20px 0 50px ;
-    cursor: pointer;    
-    border: 3px solid white;  
-    
+    margin: 0 20px 0 50px;
+    cursor: pointer;
+    border: 3px solid white;
+
 }
 
 
-.fas:hover , .fab:hover , .far:hover , .fas:hover, .fa-brands:hover, .fa-linkedin:hover, .btn-texto:hover{
-    background-color:#ffffff;  
+.fas:hover,
+.fab:hover,
+.far:hover,
+.fas:hover,
+.fa-brands:hover,
+.fa-linkedin:hover {
+    background-color: #ffffff;
     color: rgb(0, 0, 0);
 }
 
-a:link, a:visited, a:active {
-    text-decoration:none;
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
 }
 
 
 
-.github , .linkedin {
-    background-color:#000000;  
-    color: white; 
+.github,
+.linkedin {
+    background-color: #000000;
+    color: white;
     font-size: 30px;
     padding: 3px;
     border-radius: 30%;
     transition: 0.7s;
 }
 
-.github:hover, .linkedin:hover {
+.github:hover,
+.linkedin:hover {
     background-color: rgb(255, 255, 255);
     border-color: white;
     color: rgb(0, 0, 0);
@@ -94,9 +104,9 @@ a:link, a:visited, a:active {
 .design-by {
     font-size: 15px;
     text-align: center;
-    padding: 10px 0 5px 0;   
+    padding: 10px 0 5px 0;
     color: white;
-    
+
 }
 
 .sns-links {
@@ -110,7 +120,7 @@ a:link, a:visited, a:active {
 @media only screen and (max-width: 960px) {
     .footer-info {
         text-align: center;
-        padding: 0;
+        padding: 10px 0 5px 0;
         font-size: 20px;
         width: 100%;
         max-width: 100%;
@@ -118,14 +128,15 @@ a:link, a:visited, a:active {
     }
 
     .footer-info>h1 {
-        text-align: center;
+
+        padding: 10px 0 5px 0;
     }
 
     .footer-sns {
         display: table;
         padding: 0 50px 0 50px;
         text-align: center;
-    }   
+    }
 
     .design-by {
         padding: 0 0 0px 0;
