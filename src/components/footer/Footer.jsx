@@ -37,7 +37,7 @@ const Footer = () => {
             </div>
 
             <div className='design-by'>
-                Desarrollado por Guido Magi
+                Desarrollado por Guido Magi.
             </div>
 
             <div className='sns-links'>
