@@ -8,7 +8,9 @@ const Footer = () => {
             <div className='footer-info'>
                 <h1>Mis Datos</h1>
                 <a className='fas fa-address-card btn'
-                    href={cvguido}
+                    href={cvguido} 
+                    target='_blank' 
+                    rel='noopener noreferrer'
                 > <span className='btn-texto'
                 > CURRICULUM VITAE
                     </span>
@@ -16,14 +18,18 @@ const Footer = () => {
 
 
                 <a className='fa-brands fa-linkedin btn'
-                    href='https://www.linkedin.com/in/guidomagi/'
+                    href='https://www.linkedin.com/in/guidomagi/' 
+                    target='_blank' 
+                    rel='noopener noreferrer'
                 > <span className='btn-texto'
                 > LINKEDIN
                   </span>
                 </a>
 
                 <a className='fas fa-envelope btn'
-                    href='mailto:guidomagi23@gmail.com'
+                    href='mailto:guidomagi23@gmail.com' 
+                    target='_blank' 
+                    rel='noopener noreferrer'
                 > <span className='btn-texto'
                 > GMAIL
                   </span>
