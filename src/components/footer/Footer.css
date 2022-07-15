@@ -30,7 +30,7 @@
     text-align: center;       
 }
 
-.footer-info>h1 {
+.footer>h1 {
     padding-bottom: 15px;
     font-size: 30px;
     display: flex;
@@ -126,7 +126,7 @@ a:active {
         max-width: 100%;
     }
 
-    .footer-info>h1 {
+    .footer>h1 {
         padding: 10px 0px 10px 0;
     }
 

@@ -5,8 +5,8 @@ import cvguido from "../../media/cvguido.pdf";
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div className='footer-info'>
-                <h1>Mis Datos</h1>
+            <h1>Mis Datos</h1>
+            <div className='footer-info'>                
                 <a className='fas fa-address-card btn'
                     href={cvguido} 
                     target='_blank' 
