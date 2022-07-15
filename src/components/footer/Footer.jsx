@@ -9,17 +9,24 @@ const Footer = () => {
                 <h1>Mis Datos</h1>
                 <a className='fas fa-address-card btn'
                     href={cvguido}
-                > Curriculum Vitae
+                > <spam className='btn-texto'
+                > CURRICULUM VITAE
+                    </spam>
                 </a>
 
-                <a className='fab fa-linkedin btn'
+
+                <a className='fa-brands fa-linkedin btn'
                     href='https://www.linkedin.com/in/guidomagi/'
-                > Linkedin
+                > <spam className='btn-texto'
+                > LINKEDIN
+                  </spam>
                 </a>
 
                 <a className='fas fa-envelope btn'
                     href='mailto:guidomagi23@gmail.com'
-                > Gmail
+                > <spam className='btn-texto'
+                > GMAIL
+                  </spam>
                 </a>
 
 
