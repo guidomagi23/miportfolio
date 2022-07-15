@@ -4,7 +4,6 @@
     background-color: black;
     color: white;
 
-
     z-index: -2;
     bottom: 0;
     left: 0;
@@ -15,26 +14,25 @@
     font-size: 23px;
     font-weight: bold;
     text-align: center;
+    
 }
 
 
-.footer-info {
-    font-size: 25px;
-    padding: 30px 0 30px 50px;
-    width: 70%;
-    margin: 0 auto;
+.footer-info { 
+    gap: 20px;   
     display: grid;
-    grid-template-columns: repeat(1fr);
-    gap: 20px;
-    max-width: 40%;
-    text-align: center;       
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer>h1 {
-    padding-bottom: 15px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 50px 200px 20px 0px;
+
 }
 
 
@@ -137,12 +135,13 @@ a:active {
     }
 
     .design-by {
-        padding: 0 0 0px 0;
+        padding: 50px 0 0px 0;
         text-align: center;
     }
 
     .sns-links {
-        padding: 0 60px 0 60px;
+        padding: 20 60px 0 60px;
+
     }
 
     .btn {
