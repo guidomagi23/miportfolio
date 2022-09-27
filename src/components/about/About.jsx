@@ -10,7 +10,7 @@ const About = () => {
         <p>Desde el 2013 formo parte del mundo IT mediante una carrera de grado, 
           una tecnicatura, diversos cursos y trabajos. Mi último proyecto lo realicé con React y PHP 
           y fue con el cual me recibí. Me gusta aprender y enseñar y estoy dispuesto a perfeccionarme 
-          para poder crecer íntegramente como profesional.</p>
+          para poder crecer íntegramente como profesional. </p>
       </div>
       <div className='about-img'>
         <img src={aboutImagen} alt="about" />
