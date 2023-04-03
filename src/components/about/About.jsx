@@ -7,10 +7,16 @@ const About = () => {
     <div className='about-countainer'>
       <div className='about-desc'>
         <h3>Acerca de mi</h3>
-        <p>Desde el 2013 formo parte del mundo IT mediante una carrera de grado, 
-          una tecnicatura, diversos cursos y trabajos. Mi último proyecto lo realicé con React y PHP 
-          y fue con el cual me recibí. Me gusta aprender y enseñar y estoy dispuesto a perfeccionarme 
-          para poder crecer íntegramente como profesional. </p>
+        <p>Es un placer presentarme como un desarrollador de software. Durante mi carrera, he tenido la
+oportunidad de trabajar en varios proyectos, lo que me ha brindado una formación académica sólida,
+tanto en una carrera de grado como en una tecnicatura, y también he continuado mi educación a
+través de cursos y trabajos en diversos ámbitos.
+ En particular, me he enfocado en el desarrollo de aplicaciones web utilizando React y PHP, y mi
+último proyecto, en el que trabajé como parte de mi tesis de grado, se centró en estas tecnologías.
+Como resultado, he obtenido conocimientos avanzados y habilidades técnicas en su uso. Además, me
+considero un apasionado por aprender y enseñar, y siempre estoy dispuesto a perfeccionarme y
+mejorar mis habilidades.
+ </p>
       </div>
       <div className='about-img'>
         <img src={aboutImagen} alt="about" />
