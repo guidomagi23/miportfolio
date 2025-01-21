@@ -4,7 +4,7 @@ import cvguido from "../../media/cvguido.pdf";
 
 const Footer = () => {
     return (
-        <footer className='footer'>
+        <footer className='footer' id="contact">
             <h1>Mis Datos</h1>
             <div className='footer-info'>
                 <a className='fas fa-address-card btn'
@@ -15,7 +15,15 @@ const Footer = () => {
                 > CURRICULUM VITAE
                     </span>
                 </a>
-
+                
+                <a className='fas fa-solid fa-file btn'
+                    href='https://refe.educacion.gob.ar/v/37566YKrMFRVA8IyAEl3x'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                > <span className='btn-texto'
+                > ReFE
+                    </span>
+                </a>
 
                 <a className='fa-brands fa-linkedin btn'
                     href='https://www.linkedin.com/in/guidomagi/'
