@@ -82,8 +82,8 @@ a:active {
 
 .github,
 .linkedin {
-    background-color: #000000;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     font-size: 30px;
     padding: 5px;
     border-radius: 30%;
@@ -92,9 +92,9 @@ a:active {
 
 .github:hover,
 .linkedin:hover {
-    background-color: rgb(255, 255, 255);
-    border-color: white;
-    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .design-by {

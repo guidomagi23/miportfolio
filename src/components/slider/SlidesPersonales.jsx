@@ -11,6 +11,13 @@ import biesVideo2022 from "../../media/biesVideo2022.mp4";
 
 const slidesInfo = [
     {
+        img: portfolioImagen,
+        alt: "Portfolio",
+        desc: " React.JS",
+        link: "https://github.com/guidomagi23/miportfolio",
+        video: "https://guidomagi23.github.io/miportfolio/"
+    },
+    {
         img: biesImagen2021,
         alt: "Bies 2022",
         desc: "Versión 2.0",
@@ -30,20 +37,13 @@ const slidesInfo = [
         desc: "Versión 1.0",
         link: "https://github.com/guidomagi23/Noties",
         video: notiesVideo
-    },
-    {
-        img: portfolioImagen,
-        alt: "Portfolio",
-        desc: " React.JS",
-        link: "https://github.com/guidomagi23/miportfolio",
-        video: "https://guidomagi23.github.io/miportfolio/"
     }
 
 ]
 
-const slides = slidesInfo.map((slide) => (
+const SlidesPersonales = slidesInfo.map((slide) => (
     <div className="slide-container">
-        <a className="img" href={slide.video}><img src={slide.img} alt=""/> </a>             
+        <a className="img" href={slide.video} target="_blank" rel="noreferrer"><img src={slide.img} alt=""/> </a>             
         <div className="slide-desc">
             <span>{slide.alt}</span>
             <a className="slide-link" href={slide.link} target="_blank" rel='noreferrer'>
@@ -58,4 +58,4 @@ const slides = slidesInfo.map((slide) => (
 
 ));
 
-export default slides;
+export default SlidesPersonales;

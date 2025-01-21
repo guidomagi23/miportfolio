@@ -6,7 +6,6 @@ const info = () => {
     <div className='info-container'>
       <div className='info'>
         <h1>No es solo un portfolio, es una curva de aprendizaje.</h1>
-        <h2>(Te invito a conocerme)</h2>
       </div>
 
     </div>
@@ -14,3 +13,4 @@ const info = () => {
 }
 
 export default info;
+
