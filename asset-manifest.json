@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/miportfolio/static/css/main.0e97934c.css",
-    "main.js": "/miportfolio/static/js/main.022223b9.js",
+    "main.css": "/miportfolio/static/css/main.7498ee7e.css",
+    "main.js": "/miportfolio/static/js/main.6f6ce0b5.js",
     "static/media/notiesVideo.mp4": "/miportfolio/static/media/notiesVideo.0fb516651687b31f3898.mp4",
     "static/media/biesVideo2020.mp4": "/miportfolio/static/media/biesVideo2020.f9528016248ec5e971fd.mp4",
     "static/media/biesVideo2022.mp4": "/miportfolio/static/media/biesVideo2022.418b40a58540bb0947e2.mp4",
@@ -9,15 +9,23 @@
     "static/media/aboutImagen.jpg": "/miportfolio/static/media/aboutImagen.78095fd1829aadabc2c5.jpg",
     "static/media/portfolioImagen.png": "/miportfolio/static/media/portfolioImagen.78698bea627da3ed71c8.png",
     "static/media/cvguido.pdf": "/miportfolio/static/media/cvguido.cfacc28245259c12a147.pdf",
+    "static/media/tasty.jpg": "/miportfolio/static/media/tasty.6243c073a8cf62f0ea1b.jpg",
+    "static/media/community.jpg": "/miportfolio/static/media/community.52b112fa495a97f805c5.jpg",
+    "static/media/phdc.jpg": "/miportfolio/static/media/phdc.80ebf8349dd73b1f2392.jpg",
     "static/media/notiesImagen.png": "/miportfolio/static/media/notiesImagen.16652480c9d5bca0ad51.png",
+    "static/media/holapitt.jpg": "/miportfolio/static/media/holapitt.ce2ce78a727f70e1cc38.jpg",
+    "static/media/sancons.jpg": "/miportfolio/static/media/sancons.2d413ecd1eaed4a5ed1f.jpg",
+    "static/media/quatum.jpg": "/miportfolio/static/media/quatum.4705f1c9a1893e145790.jpg",
+    "static/media/Drfreeze.jpg": "/miportfolio/static/media/Drfreeze.8a77522279940ec51c60.jpg",
+    "static/media/ML.jpg": "/miportfolio/static/media/ML.68e5dde272cd4247d980.jpg",
     "static/media/biesImagen2021.png": "/miportfolio/static/media/biesImagen2021.938a1e48872fc16e9f8b.png",
     "static/media/biesImagen2020.png": "/miportfolio/static/media/biesImagen2020.ec1747a66782ff2ad649.png",
     "index.html": "/miportfolio/index.html",
-    "main.0e97934c.css.map": "/miportfolio/static/css/main.0e97934c.css.map",
-    "main.022223b9.js.map": "/miportfolio/static/js/main.022223b9.js.map"
+    "main.7498ee7e.css.map": "/miportfolio/static/css/main.7498ee7e.css.map",
+    "main.6f6ce0b5.js.map": "/miportfolio/static/js/main.6f6ce0b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e97934c.css",
-    "static/js/main.022223b9.js"
+    "static/css/main.7498ee7e.css",
+    "static/js/main.6f6ce0b5.js"
   ]
 }
