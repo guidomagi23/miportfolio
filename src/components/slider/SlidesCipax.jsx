@@ -8,6 +8,7 @@ import phdcImagen from "../../media/phdc.jpg";
 import quatumImagen from "../../media/quatum.jpg";
 import sanconsImagen from "../../media/sancons.jpg";
 import tastyImagen from "../../media/tasty.jpg";
+import latintechImagen from "../../media/latintech.jpg";
 
 
 const slidesInfo = [
@@ -25,6 +26,14 @@ const slidesInfo = [
         desc: "PHDC",
         link: "https://phdcincubator.org/",
         video: "https://phdcincubator.org/"
+    },
+
+    {
+        img: latintechImagen,
+        alt: "Latintech",
+        desc: "Latintech",
+        link: "https://latintechpgh.com/",
+        video: "https://latintechpgh.com/"
     },
 
     {

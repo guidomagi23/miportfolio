@@ -8,7 +8,7 @@ const About = () => {
       <div className='about-desc'>
         <h1>Acerca de</h1>
         <p>Desarrollador Full Stack con experiencia en desarrollo de aplicaciones web y sistemas de software, especializado en Laravel, JavaScript, MySQL y WordPress. Hábil en estrategias de SEO, integración de APIs, metodologías ágiles (SCRUM) y herramientas como Git, Jira, CPanel, Google Analytics y Search Console.
-    Comprometido con el aprendizaje continuo y la resolución eficiente de problemas, aportando soluciones robustas y escalables.
+    Comprometido con el aprendizaje continuo y la resolución eficiente de problemas, aportando soluciones.
  </p>
       </div>
       <div className='about-img'>
