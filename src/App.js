@@ -6,11 +6,25 @@ import About from './components/about/About';
 import Slider from './components/slider/Slider';
 import Info from './components/info/Info';
 import Footer from './components/footer/Footer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import CastingVideo from './components/casting/CastingVideo.jsx';
+
+function MainContent({ scrollHeight }) {
+  return (
+    <div className="App">
+      <Navbar isScrolling={scrollHeight} />
+      <Cover />
+      <About />
+      <Slider />
+      <Info />
+      <Footer />
+    </div>
+  );
+}
 
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0);
+  const location = useLocation();
 
   const handleScroll = () => {
     setScrollHeight(window.scrollY);
@@ -22,26 +36,22 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Routes>
-        {/* Página oculta del video */}
-        <Route path="/miportfolio/casting" element={<CastingVideo />} />
-      </Routes>
+    <Routes>
+      {/* Página oculta del video */}
+      <Route path="/casting" element={<CastingVideo />} />
 
-      {window.location.pathname !== "/miportfolio/casting" &&
-        window.location.pathname !== "/miportfolio/casting/" && (
-          <div className="App">
-            <Navbar isScrolling={scrollHeight} />
-            <Cover />
-            <About />
-            <Slider />
-            <Info />
-            <Footer />
-          </div>
-        )}
-
-    </Router>
+      {/* Página principal */}
+      {location.pathname !== "/casting" && (
+        <Route path="/" element={<MainContent scrollHeight={scrollHeight} />} />
+      )}
+    </Routes>
   );
 }
 
-export default App;
+export default function AppWrapper() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
