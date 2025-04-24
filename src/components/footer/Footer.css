@@ -90,6 +90,14 @@ a:active {
     transition: 0.7s;
 }
 
+.sns-links-footer:hover {
+    color: rgb(155, 155, 155);
+}
+
+.sns-links-footer {
+    color: rgb(0, 0, 0);
+}
+
 .github:hover,
 .linkedin:hover {
     background-color: rgb(0, 0, 0);
