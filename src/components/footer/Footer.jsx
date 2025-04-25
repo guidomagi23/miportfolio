@@ -51,7 +51,7 @@ const Footer = () => {
 
         <div className="design-by">
           <p>
-            © Copyright 2025 - {currentYear} | All Rights Reserved | Powered by{" "}
+            © Copyright 2023 - {currentYear} | All Rights Reserved | Powered by{" "}
             <a
               href="https://www.linkedin.com/in/guidomagi/"
               target="_blank"
