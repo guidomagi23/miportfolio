@@ -6,7 +6,7 @@ const Footer = () => {
     const currentYear = new Date().getFullYear();
     return (
       <footer className="footer" id="contact">
-        <h1>Mis Datos</h1>
+        <h2>Mis Datos</h2>
         <div className="footer-info">
           <a
             className="fas fa-address-card btn"

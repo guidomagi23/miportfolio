@@ -42,20 +42,25 @@ const slidesInfo = [
 ]
 
 const SlidesPersonales = slidesInfo.map((slide) => (
-    <div className="slide-container">
-        <a className="img" href={slide.video} target="_blank" rel="noreferrer"><img src={slide.img} alt=""/> </a>             
-        <div className="slide-desc">
-            <span>{slide.alt}</span>
-            <a className="slide-link" href={slide.link} target="_blank" rel='noreferrer'>
-                <i className='fab fa-github github'></i>
-            </a>
-            <a className="slide-video" href={slide.video}  rel='noreferrer'>
-                <i className='fab fa-solid fa-film film'></i>
-            </a>
-        </div>
+  <div className="slide-container">
+    <a className="img" href={slide.video} target="_blank" rel="noreferrer">
+      <img src={slide.img} alt={slide.alt} />{" "}
+    </a>
+    <div className="slide-desc">
+      <span>{slide.alt}</span>
+      <a
+        className="slide-link"
+        href={slide.link}
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i className="fab fa-github github"></i>
+      </a>
+      <a className="slide-video" href={slide.video} rel="noreferrer">
+        <i className="fab fa-solid fa-film film"></i>
+      </a>
     </div>
-
-
+  </div>
 ));
 
 export default SlidesPersonales;

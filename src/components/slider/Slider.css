@@ -15,11 +15,11 @@
 }
 
 
-.carousel-title>h1 {
+.carousel-title>h2 {
     font-size: 40px;
 }
 
-.carousel-title>h2 {
+.carousel-title>h3 {
     font-size: 25px;
     margin-top: 25px;
     padding: 0 30px 25px 30px;
