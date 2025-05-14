@@ -9,6 +9,7 @@ import quatumImagen from "../../media/quatum.jpg";
 import sanconsImagen from "../../media/sancons.jpg";
 import tastyImagen from "../../media/tasty.jpg";
 import latintechImagen from "../../media/latintech.jpg";
+import mezcalImagen from "../../media/mezcal.jpg";
 
 
 const slidesInfo = [
@@ -56,6 +57,14 @@ const slidesInfo = [
         desc: "Mlmultilingual",
         link: "https://www.mlmultilingualservices.com/",
         video: "https://www.mlmultilingualservices.com/"
+    },
+
+    {
+        img: mezcalImagen,
+        alt: "Mezcal",
+        desc: "Mezcal",
+        link: "https://monarcatradingllc.com/",
+        video: "https://monarcatradingllc.com/"
     },
     {
         img: quatumImagen,
