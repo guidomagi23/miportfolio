@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/miportfolio/static/css/main.6f5c411d.css",
-    "main.js": "/miportfolio/static/js/main.07e0b7e0.js",
+    "main.js": "/miportfolio/static/js/main.3c2d8075.js",
     "static/media/notiesVideo.mp4": "/miportfolio/static/media/notiesVideo.0fb516651687b31f3898.mp4",
     "static/media/biesVideo2020.mp4": "/miportfolio/static/media/biesVideo2020.f9528016248ec5e971fd.mp4",
     "static/media/biesVideo2022.mp4": "/miportfolio/static/media/biesVideo2022.418b40a58540bb0947e2.mp4",
@@ -12,6 +12,7 @@
     "static/media/aboutImagen.jpg": "/miportfolio/static/media/aboutImagen.d0fb18d03d2823a3ebc6.jpg",
     "static/media/tasty.jpg": "/miportfolio/static/media/tasty.6243c073a8cf62f0ea1b.jpg",
     "static/media/community.jpg": "/miportfolio/static/media/community.52b112fa495a97f805c5.jpg",
+    "static/media/mezcal.jpg": "/miportfolio/static/media/mezcal.7bd539ec90f193673bcb.jpg",
     "static/media/phdc.jpg": "/miportfolio/static/media/phdc.80ebf8349dd73b1f2392.jpg",
     "static/media/notiesImagen.png": "/miportfolio/static/media/notiesImagen.16652480c9d5bca0ad51.png",
     "static/media/holapitt.jpg": "/miportfolio/static/media/holapitt.ce2ce78a727f70e1cc38.jpg",
@@ -24,10 +25,10 @@
     "static/media/biesImagen2020.png": "/miportfolio/static/media/biesImagen2020.ec1747a66782ff2ad649.png",
     "index.html": "/miportfolio/index.html",
     "main.6f5c411d.css.map": "/miportfolio/static/css/main.6f5c411d.css.map",
-    "main.07e0b7e0.js.map": "/miportfolio/static/js/main.07e0b7e0.js.map"
+    "main.3c2d8075.js.map": "/miportfolio/static/js/main.3c2d8075.js.map"
   },
   "entrypoints": [
     "static/css/main.6f5c411d.css",
-    "static/js/main.07e0b7e0.js"
+    "static/js/main.3c2d8075.js"
   ]
 }
