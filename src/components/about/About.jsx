@@ -4,19 +4,22 @@ import aboutImagen from '../../media/aboutImagen.jpg'
 
 const About = () => {
   return (
-    <div className='about-countainer' id="about">
-      <div className='about-desc'>
+    <div className="about-countainer" id="about">
+      <div className="about-desc">
         <h2>Acerca de</h2>
-        <p>Desarrollador Full Stack con experiencia en desarrollo de aplicaciones web y sistemas de software, especializado en Laravel, JavaScript, MySQL y WordPress. Hábil en estrategias de SEO, integración de APIs, metodologías ágiles (SCRUM) y herramientas como Git, Jira, CPanel, Google Analytics y Search Console.
-    Comprometido con el aprendizaje continuo y la resolución eficiente de problemas, aportando soluciones.
- </p>
+        <p>
+          Desarrollador Full Stack con experiencia en aplicaciones web y
+          sistemas de software. Especializado en Laravel, JavaScript, MySQL y
+          WordPress. Con conocimientos en SEO, integración de APIs, metodologías
+          ágiles (SCRUM) y herramientas como Git, Jira, CPanel, Google Analytics
+          y Search Console. Comprometido con el aprendizaje continuo.
+        </p>
       </div>
-      <div className='about-img'>
-        <img src={aboutImagen} alt="about"/>
+      <div className="about-img">
+        <img src={aboutImagen} alt="about" />
       </div>
-
     </div>
-  )
+  );
 }
 
 export default About
