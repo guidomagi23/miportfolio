@@ -94,7 +94,7 @@ const slidesInfo = [
 
 const slidesCipax = slidesInfo.map((slide) => (
     <div className="slide-container-cipax">
-        <a className="imgCipax" href={slide.video} alt={slide.alt} target="_blank" rel="noreferrer"><img src={slide.img} alt={slide.alt}/> </a>             
+        <a className="imgCipax" title={slide.alt} href={slide.video} alt={slide.alt} target="_blank" rel="noreferrer"><img title={slide.alt} src={slide.img} alt={slide.alt}/> </a>             
         <div className="slide-desc">
             <span>{slide.alt}</span>
         </div>

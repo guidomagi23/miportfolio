@@ -11,7 +11,7 @@ const Slider = () => {
       <div className='carousel-title'>
         <h2>Mis Proyectos</h2>
         <h3>Junto a Cipax: 2023-2024</h3>
-        <p>Trabajé en proyectos increíbles como parte de un equipo talentoso en <a href="https://cipax.dev/" target="_blank" rel="noreferrer">Cipax.dev</a>, desarrollando soluciones que priorizan la innovación y los resultados efectivos. Implementé aplicaciones web completas utilizando Laravel, WordPress, HTML, CSS, Bootstrap y Git, integrando APIs, optimizando bases de datos con Eloquent, y mejorando el rendimiento y la visibilidad en línea mediante estrategias de SEO, Google Analytics y metodologías ágiles como SCRUM. </p>
+        <p>Trabajé en proyectos increíbles como parte de un equipo talentoso en <a href="https://cipax.dev/" title="Cipax.dev" target="_blank" rel="noreferrer">Cipax.dev</a>, desarrollando soluciones que priorizan la innovación y los resultados efectivos. Implementé aplicaciones web completas utilizando Laravel, WordPress, HTML, CSS, Bootstrap y Git, integrando APIs, optimizando bases de datos con Eloquent, y mejorando el rendimiento y la visibilidad en línea mediante estrategias de SEO, Google Analytics y metodologías ágiles como SCRUM. </p>
       </div>
       <Carousel
         arrows
