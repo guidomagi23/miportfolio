@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/miportfolio/static/css/main.9b741217.css",
-    "main.js": "/miportfolio/static/js/main.added731.js",
+    "main.js": "/miportfolio/static/js/main.37fe2418.js",
     "static/media/notiesVideo.mp4": "/miportfolio/static/media/notiesVideo.0fb516651687b31f3898.mp4",
     "static/media/biesVideo2020.mp4": "/miportfolio/static/media/biesVideo2020.f9528016248ec5e971fd.mp4",
     "static/media/biesVideo2022.mp4": "/miportfolio/static/media/biesVideo2022.418b40a58540bb0947e2.mp4",
     "static/media/casting-en.mp4": "/miportfolio/static/media/casting-en.52200927e449a1e0ddfc.mp4",
     "static/media/coverVideo.mp4": "/miportfolio/static/media/coverVideo.07b7f97ef76ae62082e8.mp4",
     "static/media/portfolioImagen.png": "/miportfolio/static/media/portfolioImagen.78698bea627da3ed71c8.png",
+    "static/media/luciomagi.png": "/miportfolio/static/media/luciomagi.fc904774c3b39239cb7a.png",
     "static/media/cvguido.pdf": "/miportfolio/static/media/cvguido.c82ef219b479d0c3b035.pdf",
     "static/media/aboutImagen.jpg": "/miportfolio/static/media/aboutImagen.d0fb18d03d2823a3ebc6.jpg",
     "static/media/tasty.jpg": "/miportfolio/static/media/tasty.6243c073a8cf62f0ea1b.jpg",
@@ -25,10 +26,10 @@
     "static/media/biesImagen2020.png": "/miportfolio/static/media/biesImagen2020.ec1747a66782ff2ad649.png",
     "index.html": "/miportfolio/index.html",
     "main.9b741217.css.map": "/miportfolio/static/css/main.9b741217.css.map",
-    "main.added731.js.map": "/miportfolio/static/js/main.added731.js.map"
+    "main.37fe2418.js.map": "/miportfolio/static/js/main.37fe2418.js.map"
   },
   "entrypoints": [
     "static/css/main.9b741217.css",
-    "static/js/main.added731.js"
+    "static/js/main.37fe2418.js"
   ]
 }
