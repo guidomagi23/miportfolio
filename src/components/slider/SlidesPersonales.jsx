@@ -7,39 +7,46 @@ import portfolioImagen from "../../media/portfolioImagen.png";
 import biesVideo2020 from "../../media/biesVideo2020.mp4";
 import notiesVideo from "../../media/notiesVideo.mp4";
 import biesVideo2022 from "../../media/biesVideo2022.mp4";
+import lucioMagi from "../../media/luciomagi.png";
 
 
 const slidesInfo = [
-    {
-        img: portfolioImagen,
-        alt: "Portfolio",
-        desc: " React.JS",
-        link: "https://github.com/guidomagi23/miportfolio",
-        video: "https://guidomagi23.github.io/miportfolio/"
-    },
-    {
-        img: biesImagen2021,
-        alt: "Bies 2022",
-        desc: "Versión 2.0",
-        link: "https://github.com/guidomagi23/Bies22",
-        video: biesVideo2022
-    },
-    {
-        img: biesImagen2020,
-        alt: "Bies 2020",
-        desc: "Versión 1.0",
-        link: "https://github.com/guidomagi23/Bies20",
-        video: biesVideo2020
-    },
-    {
-        img: notiesImagen,
-        alt: "Noties",
-        desc: "Versión 1.0",
-        link: "https://github.com/guidomagi23/Noties",
-        video: notiesVideo
-    }
-
-]
+  {
+    img: lucioMagi,
+    alt: "Dj | Productor",
+    desc: "Página web",
+    link: "https://luciomagi.github.io/luciomagi/",
+    video: "https://luciomagi.github.io/luciomagi/",
+  },
+  {
+    img: portfolioImagen,
+    alt: "Portfolio",
+    desc: " React.JS",
+    link: "https://github.com/guidomagi23/miportfolio",
+    video: "https://guidomagi23.github.io/miportfolio/",
+  },
+  {
+    img: biesImagen2021,
+    alt: "Bies 2022",
+    desc: "Versión 2.0",
+    link: "https://github.com/guidomagi23/Bies22",
+    video: biesVideo2022,
+  },
+  {
+    img: biesImagen2020,
+    alt: "Bies 2020",
+    desc: "Versión 1.0",
+    link: "https://github.com/guidomagi23/Bies20",
+    video: biesVideo2020,
+  },
+  {
+    img: notiesImagen,
+    alt: "Noties",
+    desc: "Versión 1.0",
+    link: "https://github.com/guidomagi23/Noties",
+    video: notiesVideo,
+  },
+];
 
 const SlidesPersonales = slidesInfo.map((slide) => (
   <div className="slide-container">

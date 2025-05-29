@@ -49,10 +49,10 @@ const Slider = () => {
       />
 
       <div className="carousel-title">
-        <h3>Personales: 2019-2022</h3>
+        <h3>Personales: 2019-2025</h3>
         <p>
-          Durante mis estudios, desarrollé proyectos personales que me
-          permitieron explorar y consolidar mis habilidades en diversas
+          Durante mis estudios, desarrollo proyectos personales que me
+          permiten explorar y consolidar mis habilidades en diversas
           tecnologías. Creé aplicaciones y soluciones utilizando PhoneGap,
           JavaScript, HTML, CSS y PHP, integrando bases de datos MySQL. También
           experimenté con el desarrollo móvil nativo en Android Studio y
