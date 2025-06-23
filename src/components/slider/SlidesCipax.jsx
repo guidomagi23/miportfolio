@@ -14,9 +14,9 @@ import mezcalImagen from "../../media/mezcal.jpg";
 const slidesInfo = [
   {
     img: communityImagen,
-    alt: "Community",
+    alt: "Página web en donde se encuentran emprendedores de diferentes rubros.",
     desc: "Community",
-    letra: "C",
+    letra: "Community",
     color: "#49aff7",
     link: "https://community.phdcincubator.org/",
     video: "https://community.phdcincubator.org/",
@@ -24,9 +24,9 @@ const slidesInfo = [
 
   {
     img: phdcImagen,
-    alt: "PHDC",
+    alt: "Página web de Corporación de Desarrollo Hispano de Pittsburgh",
     desc: "PHDC",
-    letra: "P",
+    letra: "PHDC",
     color: "#baa182",
     link: "https://phdcincubator.org/",
     video: "https://phdcincubator.org/",
@@ -34,37 +34,37 @@ const slidesInfo = [
 
   {
     img: latintechImagen,
-    alt: "Latintech",
+    alt: "Colaboración en la creación de la página web de Latintech.",
     desc: "Latintech",
-    letra: "L",
+    letra: "Latintech",
     color: "#0f888f",
     link: "https://latintechpgh.com/",
     video: "https://latintechpgh.com/",
   },
+  {
+    img: holapittImagen,
+    alt: "Página web para guiar al nuevo emprendedor en su llegada a Pittsburgh.",
+    desc: "Holapittsburgh",
+    letra: "Holapittsburgh",
+    color: "#ffb512",
+    link: "https://holapittsburgh.com/",
+    video: "https://holapittsburgh.com/",
+  },
 
   {
     img: DrfreezeImagen,
-    alt: "Drfreeze",
+    alt: "Página web para cliente emprendedor.",
     desc: "Drfreeze",
-    letra: "D",
+    letra: "Drfreeze",
     color: "#7c7c7a",
     link: "https://drfreezellc.com/",
     video: "https://drfreezellc.com/",
   },
   {
-    img: holapittImagen,
-    alt: "Holapittsburgh",
-    desc: "Holapittsburgh",
-    letra: "H",
-    color: "#ffb512",
-    link: "https://holapittsburgh.com/",
-    video: "https://holapittsburgh.com/",
-  },
-  {
     img: MLImagen,
-    alt: "Mlmultilingual",
+    alt: "Página web para cliente emprendedor.",
     desc: "Mlmultilingual",
-    letra: "M",
+    letra: "Mlmultilingual",
     color: "#df3b4a",
     link: "https://www.mlmultilingualservices.com/",
     video: "https://www.mlmultilingualservices.com/",
@@ -72,36 +72,36 @@ const slidesInfo = [
 
   {
     img: mezcalImagen,
-    alt: "Mezcal",
+    alt: "Página web para cliente emprendedor.",
     desc: "Mezcal",
-    letra: "M",
+    letra: "Mezcal",
     color: "#a77f5a",
     link: "https://monarcatradingllc.com/",
     video: "https://monarcatradingllc.com/",
   },
   {
     img: quatumImagen,
-    alt: "Quantumvibe",
+    alt: "Página web para cliente emprendedor.",
     desc: "Quantumvibe",
-    letra: "Q",
+    letra: "Quantumvibe",
     color: "#165788",
     link: "https://www.quantumvibellc.net/",
     video: "https://www.quantumvibellc.net/",
   },
   {
     img: sanconsImagen,
-    alt: "Sanconstructions",
+    alt: "Página web para cliente emprendedor.",
     desc: "Sanconstructions",
-    letra: "S",
+    letra: "San Constructions",
     color: "#919095",
     link: "https://sanconstructionsllc.com/",
     video: "https://sanconstructionsllc.com/",
   },
   {
     img: tastyImagen,
-    alt: "Tasty",
+    alt: "Página web para cliente emprendedor.",
     desc: "Tasty",
-    letra: "T",
+    letra: "Tasty",
     color: "#006749",
     link: "https://tastytaquitos.com/",
     video: "https://tastytaquitos.com/",
@@ -123,9 +123,10 @@ const slidesCipax = slidesInfo.map((slide, index) => (
   >
    
       <div className="imgCipax">
-        <span
+        <span 
+          className="letraCipax"
           style={{
-            fontSize: "60px",
+            fontSize: "40px",
             color: "#fff",
             fontWeight: "bold",
           }}

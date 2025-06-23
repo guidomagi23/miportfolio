@@ -53,7 +53,7 @@ const SlidesPersonales = slidesInfo.map((slide) => (
     <a className="img" href={slide.video} title={slide.alt} target="_blank" rel="noreferrer">
       <img src={slide.img} title={slide.alt} alt={slide.alt} />{" "}
     </a>
-    <div className="slide-desc">
+    <div className="slide-desc personales">
       <span>{slide.alt}</span>
       <a
         className="slide-link"

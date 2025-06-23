@@ -85,19 +85,34 @@
     justify-content: center
 }
 
+.letraCipax {
+    text-align: center;
+}
+
 .slide-container-cipax:hover>.imgCipax {
-    transform: scale(1.8);
+    transform: scale(1.2);
     opacity: 0.7;
 }
 
 .slide-desc {
     background-color: black;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 20px 20px 20px 20px;
-    border-top-left-radius: 35px;
+    padding: 10px;
+    border-radius: 35px;
     opacity: 0.7;
+    align-self: flex-end;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+}
+
+.slide-desc.personales {
+   text-align: center !important;
+}
+
+.slide-desc.personales>span {
+    text-align: center !important;
 }
 
 .slide-desc>span {
@@ -184,6 +199,7 @@
     }
     .about-desc p {
         font-size: 15px;
+        text-align: center;
     }
 
     .about-desc {
@@ -196,12 +212,13 @@
 
     .slide-desc>span {
         font-size: 12px;
-        padding: 0px 3 0px 0px;
+        padding: 0px;
     }
 
     .slide-desc{
         font-size: 12px;
-        padding: 0px 1rem 0px 2rem;
+        border-radius: 20px;
+        padding: 2px;
     }
 
     .slide-link>.github{
@@ -227,6 +244,10 @@
     .imgCipax {
         object-fit: scale-down;
         transition: none;
+    }
+
+    .letraCipax {
+        font-size: 25px !important;
     }
 
     .slide-container {
