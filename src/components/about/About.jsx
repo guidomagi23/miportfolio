@@ -8,7 +8,7 @@ const About = () => {
       <div className="about-desc">
         <h2>Acerca de</h2>
         <p>
-          Desarrollador Full Stack con experiencia en aplicaciones web y
+          Desarrollador de software con experiencia en aplicaciones web y
           sistemas de software. Especializado en Laravel, JavaScript, MySQL y
           WordPress. Con conocimientos en SEO, integración de APIs, metodologías
           ágiles (SCRUM) y herramientas como Git, Jira, CPanel, Google Analytics
@@ -16,7 +16,7 @@ const About = () => {
         </p>
       </div>
       <div className="about-img">
-        <img title="Guido Magi" src={aboutImagen} alt="about" />
+        <img title="Guido Magi - Desarrollador de Software" src={aboutImagen} alt="about" />
       </div>
     </div>
   );
