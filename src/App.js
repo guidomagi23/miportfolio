@@ -6,8 +6,7 @@ import About from './components/about/About';
 import Slider from './components/slider/Slider';
 import Info from './components/info/Info';
 import Footer from './components/footer/Footer';
-import { HashRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
-import CastingVideo from './components/casting/CastingVideo.jsx';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 function MainContent({ scrollHeight }) {
   return (
@@ -24,7 +23,6 @@ function MainContent({ scrollHeight }) {
 
 function App() {
   const [scrollHeight, setScrollHeight] = useState(0);
-  const location = useLocation();
 
   const handleScroll = () => {
     setScrollHeight(window.scrollY);
@@ -37,13 +35,7 @@ function App() {
 
   return (
     <Routes>
-      {/* Página oculta del video */}
-      <Route path="/casting" element={<CastingVideo />} />
-
-      {/* Página principal */}
-      {location.pathname !== "/casting" && (
-        <Route path="/" element={<MainContent scrollHeight={scrollHeight} />} />
-      )}
+      <Route path="/" element={<MainContent scrollHeight={scrollHeight} />} />
     </Routes>
   );
 }
