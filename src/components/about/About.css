@@ -161,6 +161,9 @@
 }
 
 .skill-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
     background: var(--bg-tertiary);
     color: var(--text-secondary);
     padding: var(--space-xs) var(--space-md);
@@ -169,13 +172,143 @@
     font-weight: 500;
     border: 1px solid rgba(255, 255, 255, 0.1);
     transition: all var(--transition-normal);
+    position: relative;
+}
+
+/* Colores por nivel de habilidad */
+.skill-tag.avanzado {
+    border-color: rgba(34, 197, 94, 0.3);
+    background: rgba(34, 197, 94, 0.1);
+}
+
+.skill-tag.intermedio {
+    border-color: rgba(59, 130, 246, 0.3);
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.skill-tag.básico {
+    border-color: rgba(156, 163, 175, 0.3);
+    background: rgba(156, 163, 175, 0.1);
+}
+
+.skill-level-badge {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.skill-tag.avanzado .skill-level-badge {
+    background: rgba(34, 197, 94, 0.2);
+    color: #22c55e;
+}
+
+.skill-tag.intermedio .skill-level-badge {
+    background: rgba(59, 130, 246, 0.2);
+    color: #3b82f6;
+}
+
+.skill-tag.básico .skill-level-badge {
+    background: rgba(156, 163, 175, 0.2);
+    color: #9ca3af;
 }
 
 .skill-tag:hover {
-    background: var(--primary-color);
-    color: white;
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
+}
+
+.skill-tag.avanzado:hover {
+    background: rgba(34, 197, 94, 0.2);
+    border-color: #22c55e;
+}
+
+.skill-tag.intermedio:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: #3b82f6;
+}
+
+.skill-tag.básico:hover {
+    background: rgba(156, 163, 175, 0.2);
+    border-color: #9ca3af;
+}
+
+/* Experience Section */
+.experience-section {
+    margin: var(--space-2xl) 0;
+}
+
+.experience-section h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 var(--space-lg) 0;
+}
+
+.experience-timeline {
+    position: relative;
+    padding-left: var(--space-lg);
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--gradient-primary);
+    border-radius: 1px;
+}
+
+.experience-item {
+    position: relative;
+    margin-bottom: var(--space-2xl);
+    padding-left: var(--space-lg);
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    border: 3px solid var(--bg-secondary);
+    box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.experience-period {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: var(--bg-card);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-md);
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+    margin-left: var(--space-sm);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.experience-content h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 var(--space-sm) 0;
+}
+
+.experience-content p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Achievements Section */
@@ -407,6 +540,31 @@
 
     .floating-icons {
         display: none;
+    }
+
+    .experience-timeline {
+        padding-left: var(--space-md);
+    }
+
+    .experience-item {
+        padding-left: var(--space-md);
+    }
+
+    .experience-item::before {
+        left: -var(--space-md);
+        top: 12px;
+    }
+
+    .experience-period {
+        margin-left: var(--space-xs);
+    }
+
+    .experience-content h4 {
+        font-size: 16px;
+    }
+
+    .experience-content p {
+        font-size: 13px;
     }
 }
 

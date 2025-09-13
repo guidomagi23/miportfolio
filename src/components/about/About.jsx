@@ -28,21 +28,53 @@ const About = () => {
   }, []);
 
   const skills = [
-    { category: "Frontend", items: ["JavaScript", "React", "CSS3", "HTML5"] },
-    { category: "Backend", items: ["Laravel", "PHP", "Java", "MySQL"] },
     {
-      category: "CMS",
-      items: ["WordPress", "Custom Themes", "Plugin Development"],
+      category: "Lenguajes y Tecnologías",
+      items: [
+        { name: "Laravel", level: "Intermedio" },
+        { name: "JavaScript", level: "Intermedio" },
+        { name: "PHP", level: "Intermedio" },
+        { name: "React", level: "Intermedio" },
+        { name: "Java", level: "Intermedio" },
+        { name: "MySQL", level: "Avanzado" },
+        { name: "HTML/CSS", level: "Intermedio" },
+        { name: "Bootstrap", level: "Intermedio" },
+        { name: "Angular", level: "Básico" },
+        { name: "Android", level: "Básico" },
+        { name: "C++", level: "Básico" },
+      ],
     },
-    { category: "Tools", items: ["Git", "Jira", "Google Analytics", "CPanel"] },
-    { category: "Metodologías", items: ["SCRUM", "SEO", "API Integration"] },
-  ];
-
-  const achievements = [
-    { number: "3+", label: "Años de Experiencia" },
-    { number: "15+", label: "Proyectos Completados" },
-    { number: "100%", label: "Satisfacción Cliente" },
-    { number: "24/7", label: "Soporte Disponible" },
+    {
+      category: "Herramientas y Entornos",
+      items: [
+        { name: "Git/GitHub", level: "Intermedio" },
+        { name: "Docker", level: "Intermedio" },
+        { name: "Jira", level: "Intermedio" },
+        { name: "Bitbucket", level: "Intermedio" },
+        { name: "ClickUp", level: "Intermedio" },
+        { name: "Slack", level: "Intermedio" },
+        { name: "CPanel", level: "Intermedio" },
+        { name: "IBExpert", level: "Intermedio" },
+      ],
+    },
+    {
+      category: "CMS y Plataformas",
+      items: [
+        { name: "WordPress", level: "Avanzado" },
+        { name: "Avada Theme", level: "Avanzado" },
+        { name: "Bagisto", level: "Intermedio" },
+      ],
+    },
+    {
+      category: "Metodologías y Conceptos",
+      items: [
+        { name: "SCRUM", level: "Intermedio" },
+        { name: "SEO", level: "Intermedio" },
+        { name: "API Integration", level: "Intermedio" },
+        { name: "Google Analytics", level: "Intermedio" },
+        { name: "Search Console", level: "Intermedio" },
+      ],
+    },
   ];
 
   return (
@@ -63,24 +95,32 @@ const About = () => {
           <div className="about-text">
             <div className="about-intro">
               <p className="intro-text">
-                Soy un <strong>desarrollador de software apasionado</strong> con
-                más de 3 años de experiencia creando soluciones web innovadoras
-                y sistemas robustos que impulsan el crecimiento empresarial.
+                Soy <strong>Técnico Superior en Desarrollo de Software</strong>{" "}
+                con más de 4 años de experiencia profesional trabajando en
+                empresas desarrollando soluciones, aplicaciones y sistemas.
               </p>
             </div>
 
             <div className="about-description">
               <p>
-                Mi especialización se centra en el desarrollo full-stack con{" "}
-                <strong>Laravel</strong>,<strong> JavaScript</strong> y{" "}
-                <strong>MySQL</strong>, complementado con expertise en
-                <strong> WordPress</strong> para soluciones CMS personalizadas.
+                Mi experiencia actual como{" "}
+                <strong>Desarrollador Fullstack </strong>
+                incluye trabajo con <strong>Laravel Bagisto</strong> para
+                plataformas e-commerce,
+                <strong> Docker</strong>, <strong>MySQL</strong> y integración
+                de APIs externas. Anteriormente me
+                especialicé en desarrollo con Laravel, WordPress y estrategias
+                de SEO.
               </p>
               <p>
-                Tengo sólidos conocimientos en <strong>SEO</strong>, integración
-                de <strong>APIs</strong>, y trabajo con metodologías ágiles como{" "}
-                <strong>SCRUM</strong>. Manejo herramientas profesionales como
-                Git, Jira, CPanel, Google Analytics y Search Console.
+                Tengo sólidos conocimientos en{" "}
+                <strong>metodologías ágiles SCRUM</strong>,
+                <strong> Google Analytics</strong>,{" "}
+                <strong>Search Console</strong> y herramientas como{" "}
+                <strong>Git/GitHub</strong>, <strong>Jira</strong>,{" "}
+                <strong>Docker</strong> y<strong> Bitbucket </strong>. Mi
+                formación incluye certificaciones en ReactJS, Angular y
+                JavaScript.
               </p>
             </div>
 
@@ -96,8 +136,15 @@ const About = () => {
                     <h4>{skillGroup.category}</h4>
                     <div className="skill-items">
                       {skillGroup.items.map((skill) => (
-                        <span key={skill} className="skill-tag">
-                          {skill}
+                        <span
+                          key={skill.name}
+                          className={`skill-tag ${skill.level.toLowerCase()}`}
+                          title={`${skill.name} - ${skill.level}`}
+                        >
+                          {skill.name}
+                          <span className="skill-level-badge">
+                            {skill.level}
+                          </span>
                         </span>
                       ))}
                     </div>
@@ -106,20 +153,44 @@ const About = () => {
               </div>
             </div>
 
-            <div className="achievements-section">
-              <div className="achievements-grid">
-                {achievements.map((achievement, index) => (
-                  <div
-                    key={achievement.label}
-                    className="achievement-item"
-                    style={{ animationDelay: `${index * 0.2}s` }}
-                  >
-                    <div className="achievement-number">
-                      {achievement.number}
-                    </div>
-                    <div className="achievement-label">{achievement.label}</div>
+            <div className="experience-section">
+              <h3>Experiencia Laboral</h3>
+              <div className="experience-timeline">
+                <div className="experience-item">
+                  <div className="experience-period">Jul 2025 - Actualidad</div>
+                  <div className="experience-content">
+                    <h4>APPLICA SOLUTIONS - Desarrollador Fullstack</h4>
+                    <p>
+                      Desarrollo de plataformas e-commerce con Laravel Bagisto,
+                      gestión de bases de datos MySQL, integración de APIs
+                      externas, optimización SEO y uso de Docker para
+                      containerización.
+                    </p>
                   </div>
-                ))}
+                </div>
+                <div className="experience-item">
+                  <div className="experience-period">Jul 2023 - Dic 2024</div>
+                  <div className="experience-content">
+                    <h4>CIPAX - Desarrollador de Software</h4>
+                    <p>
+                      Desarrollo web con Laravel, WordPress, HTML, CSS y
+                      Bootstrap. Integración de APIs, consultas con Eloquent,
+                      estrategias de SEO con Google Analytics y metodologías
+                      ágiles SCRUM.
+                    </p>
+                  </div>
+                </div>
+                <div className="experience-item">
+                  <div className="experience-period">Mar 2020 - Ene 2022</div>
+                  <div className="experience-content">
+                    <h4>Grupo Guadalupe S.R.L - Desarrollador de Software</h4>
+                    <p>
+                      Desarrollo de sistemas desktop con Delphi y Firebird,
+                      creación de consultas SQL y mantenimiento de sistemas
+                      empresariales.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
