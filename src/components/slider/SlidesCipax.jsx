@@ -32,7 +32,7 @@ const slidesInfo = [
     title: "Latintech",
     subtitle: "Tecnología Latinoamericana",
     description:
-      "Plataforma web para la comunidad tecnológica latina en Pittsburgh, con recursos y eventos del sector",
+      "Colaboración en la creación de la plataforma web para Latintech.",
     technologies: ["HTML5", "CSS3", "JavaScript"],
     techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
     color: "#0f888f",
@@ -58,7 +58,7 @@ const slidesInfo = [
     title: "Dr. Freeze",
     subtitle: "Servicios de Refrigeración",
     description:
-      "Sitio web corporativo para empresa de servicios de refrigeración, con catálogo de productos y contacto",
+      "Sitio web corporativo para empresa de servicios de refrigeración.",
     technologies: ["HTML", "CSS", "JavaScript"],
     techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
     color: "#7c7c7a",
@@ -84,7 +84,7 @@ const slidesInfo = [
     title: "Mezcal",
     subtitle: "Comercio Internacional",
     description:
-      "Sitio web para empresa de comercio internacional de mezcal, con catálogo de productos y exportación",
+      "Sitio web para empresa de comercio internacional de mezcal.",
     technologies: ["WordPress", "PHP", "CSS3"],
     techIcons: ["fab fa-wordpress", "fab fa-php", "fab fa-css3-alt"],
     color: "#a77f5a",
@@ -97,7 +97,7 @@ const slidesInfo = [
     title: "Quantum Vibe",
     subtitle: "Consultoría Tecnológica",
     description:
-      "Plataforma web para empresa de consultoría tecnológica, con servicios especializados y casos de estudio",
+      "Página web para cliente emprendedor.",
     technologies: ["Laravel", "MySQL", "JavaScript"],
     techIcons: ["fab fa-laravel", "fas fa-database", "fab fa-js-square"],
     color: "#165788",
@@ -123,7 +123,7 @@ const slidesInfo = [
     title: "Tasty Taquitos",
     subtitle: "Restaurante Mexicano",
     description:
-      "Sitio web para restaurante de comida mexicana, con menú digital, ubicación y pedidos en línea",
+      "Sitio web para restaurante de comida mexicana.",
     technologies: ["WordPress", "PHP", "Bootstrap"],
     techIcons: ["fab fa-wordpress", "fab fa-php", "fab fa-bootstrap"],
     color: "#006749",
