@@ -1,72 +1,121 @@
 import React from "react";
 import "./Slider.css";
-import notiesImagen from "../../media/notiesImagen.png";
-import biesImagen2020 from "../../media/biesImagen2020.png";
-import biesImagen2021 from "../../media/biesImagen2021.png";
-import portfolioImagen from "../../media/portfolioImagen.png";
-import biesVideo2020 from "../../media/biesVideo2020.mp4";
-import notiesVideo from "../../media/notiesVideo.mp4";
-import biesVideo2022 from "../../media/biesVideo2022.mp4";
-import lucioMagi from "../../media/luciomagi.png";
-
 
 const slidesInfo = [
   {
-    img: lucioMagi,
-    alt: "Dj | Productor",
-    desc: "Página web",
-    link: "https://luciomagi.github.io/luciomagi/",
-    video: "https://luciomagi.github.io/luciomagi/",
+    title: "Lucio Magi",
+    subtitle: "DJ & Productor Musical",
+    description:
+      "Página web personal para DJ y productor musical con diseño moderno y portfolio de trabajos",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
+    color: "#6366f1",
+    gradient: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
+    link: "https://github.com/guidomagi23/luciomagi",
+    demo: "https://luciomagi.github.io/luciomagi/",
+    icon: "fas fa-music",
   },
   {
-    img: portfolioImagen,
-    alt: "Portfolio",
-    desc: " React.JS",
+    title: "Mi Portfolio",
+    subtitle: "React.js Developer",
+    description:
+      "Portfolio personal desarrollado con React.js, mostrando proyectos y habilidades técnicas",
+    technologies: ["React", "JavaScript", "CSS3"],
+    techIcons: ["fab fa-react", "fab fa-js-square", "fab fa-css3-alt"],
+    color: "#06b6d4",
+    gradient: "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)",
     link: "https://github.com/guidomagi23/miportfolio",
-    video: "https://guidomagi23.github.io/miportfolio/",
+    demo: "https://guidomagi23.github.io/miportfolio/",
+    icon: "fas fa-laptop-code",
   },
   {
-    img: biesImagen2021,
-    alt: "Bies 2022",
-    desc: "Versión 2.0",
+    title: "BIES 2022",
+    subtitle: "Sistema de Gestión v2.0",
+    description:
+      "Sistema completo de gestión para eventos estudiantiles con funcionalidades avanzadas",
+    technologies: ["PHP", "MySQL", "JavaScript"],
+    techIcons: ["fab fa-php", "fas fa-database", "fab fa-js-square"],
+    color: "#dc2626",
+    gradient: "linear-gradient(135deg, #dc2626 0%, #b91c1c 100%)",
     link: "https://github.com/guidomagi23/Bies22",
-    video: biesVideo2022,
+    demo: "https://github.com/guidomagi23/Bies22",
+    icon: "fas fa-calendar-alt",
   },
   {
-    img: biesImagen2020,
-    alt: "Bies 2020",
-    desc: "Versión 1.0",
+    title: "BIES 2020",
+    subtitle: "Sistema de Gestión v1.0",
+    description:
+      "Primera versión del sistema de gestión para eventos estudiantiles de la universidad",
+    technologies: ["PHP", "MySQL", "Bootstrap"],
+    techIcons: ["fab fa-php", "fas fa-database", "fab fa-bootstrap"],
+    color: "#059669",
+    gradient: "linear-gradient(135deg, #059669 0%, #047857 100%)",
     link: "https://github.com/guidomagi23/Bies20",
-    video: biesVideo2020,
+    demo: "https://github.com/guidomagi23/Bies20",
+    icon: "fas fa-graduation-cap",
   },
   {
-    img: notiesImagen,
-    alt: "Noties",
-    desc: "Versión 1.0",
+    title: "Noties",
+    subtitle: "Aplicación de Notas",
+    description:
+      "Aplicación web para gestión de notas personales con interfaz intuitiva y funcionalidades modernas",
+    technologies: ["JavaScript", "HTML5", "CSS3"],
+    techIcons: ["fab fa-js-square", "fab fa-html5", "fab fa-css3-alt"],
+    color: "#ea580c",
+    gradient: "linear-gradient(135deg, #ea580c 0%, #c2410c 100%)",
     link: "https://github.com/guidomagi23/Noties",
-    video: notiesVideo,
+    demo: "https://github.com/guidomagi23/Noties",
+    icon: "fas fa-sticky-note",
   },
 ];
 
-const SlidesPersonales = slidesInfo.map((slide) => (
-  <div className="slide-container">
-    <a className="img" href={slide.video} title={slide.alt} target="_blank" rel="noreferrer">
-      <img src={slide.img} title={slide.alt} alt={slide.alt} />{" "}
-    </a>
-    <div className="slide-desc personales">
-      <span>{slide.alt}</span>
-      <a
-        className="slide-link"
-        title={slide.link}
-        href={slide.link}
-        target="_blank"
-        rel="noreferrer"
-      >
-        <i className="fab fa-github github"></i>
-      </a>
-      <a className="slide-video" title={slide.alt} href={slide.video} rel="noreferrer">
-        <i className="fab fa-solid fa-film film"></i>
-      </a>
+const SlidesPersonales = slidesInfo.map((project, index) => (
+  <div key={index} className="project-card-personal">
+    <div
+      className="project-card-background"
+      style={{ background: project.gradient }}
+    >
+      <div className="project-card-content">
+        {/* Header con icono y título */}
+        <div className="project-header">
+          <div className="project-icon">
+            <i className={project.icon}></i>
+          </div>
+          <div className="project-titles">
+            <h3 className="project-title">{project.title}</h3>
+            <p className="project-subtitle">{project.subtitle}</p>
+          </div>
+        </div>
+
+        {/* Descripción */}
+        <div className="project-description">
+          <p>{project.description}</p>
+        </div>
+
+        {/* Tecnologías */}
+        <div className="project-technologies">
+          {project.technologies.map((tech, techIndex) => (
+            <div key={techIndex} className="tech-tag">
+              <i className={project.techIcons[techIndex]}></i>
+              <span>{tech}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Enlaces */}
+        <div className="project-links">
+          <a
+            href={project.demo}
+            target="_blank"
+            rel="noreferrer"
+            className="project-link demo"
+            title="Ver"
+          >
+            <i className="fas fa-external-link-alt"></i>
+            <span>Info</span>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 ));
