@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./About.css";
+import "./About-responsive.css";
 import aboutImagen from "../../media/aboutImagen.jpg";
 
 const About = () => {
@@ -108,9 +109,8 @@ const About = () => {
                 incluye trabajo con <strong>Laravel Bagisto</strong> para
                 plataformas e-commerce,
                 <strong> Docker</strong>, <strong>MySQL</strong> y integración
-                de APIs externas. Anteriormente me
-                especialicé en desarrollo con Laravel, WordPress y estrategias
-                de SEO.
+                de APIs externas. Anteriormente me especialicé en desarrollo con
+                Laravel, WordPress y estrategias de SEO.
               </p>
               <p>
                 Tengo sólidos conocimientos en{" "}

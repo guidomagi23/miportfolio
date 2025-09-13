@@ -1,0 +1,474 @@
+/* Responsive optimizations for About component */
+
+/* Mobile-first approach */
+/* Móviles pequeños (320px - 480px) */
+@media screen and (max-width: 480px) {
+    .about-section {
+        padding: var(--space-xl) 0;
+        min-height: auto;
+    }
+
+    .about-container {
+        padding: 0 var(--space-md);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-xl);
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 4vw, 2rem);
+        line-height: 1.3;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-xl);
+        opacity: 1;
+        transform: none;
+    }
+
+    .about-text {
+        gap: var(--space-lg);
+    }
+
+    .about-intro {
+        margin-bottom: var(--space-md);
+    }
+
+    .intro-text {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .about-description p {
+        font-size: 14px;
+        line-height: 1.6;
+        margin-bottom: var(--space-md);
+    }
+
+    /* Skills Section */
+    .skills-section h3 {
+        font-size: 20px;
+        margin-bottom: var(--space-md);
+    }
+
+    .skills-grid {
+        gap: var(--space-md);
+    }
+
+    .skill-category {
+        padding: var(--space-md);
+    }
+
+    .skill-category h4 {
+        font-size: 14px;
+        margin-bottom: var(--space-sm);
+    }
+
+    .skill-items {
+        gap: var(--space-xs);
+    }
+
+    .skill-tag {
+        font-size: 12px;
+        padding: var(--space-xs) var(--space-sm);
+        flex-wrap: wrap;
+    }
+
+    .skill-level-badge {
+        font-size: 9px;
+        padding: 2px 4px;
+    }
+
+    /* Experience Section */
+    .experience-section {
+        margin: var(--space-lg) 0;
+    }
+
+    .experience-section h3 {
+        font-size: 20px;
+        margin-bottom: var(--space-md);
+    }
+
+    .experience-timeline {
+        padding-left: var(--space-md);
+    }
+
+    .experience-item {
+        margin-bottom: var(--space-lg);
+        padding-left: var(--space-md);
+    }
+
+    .experience-item::before {
+        left: -var(--space-md);
+        top: 12px;
+        width: 10px;
+        height: 10px;
+        border: 2px solid var(--bg-secondary);
+    }
+
+    .experience-period {
+        font-size: 12px;
+        margin-left: var(--space-xs);
+        margin-bottom: var(--space-xs);
+        padding: var(--space-xs) var(--space-sm);
+    }
+
+    .experience-content h4 {
+        font-size: 16px;
+        margin-bottom: var(--space-xs);
+        line-height: 1.4;
+    }
+
+    .experience-content p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* About Visual */
+    .about-visual {
+        order: -1;
+        margin-bottom: var(--space-lg);
+    }
+
+    .image-container {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .image-frame {
+        padding: 3px;
+    }
+
+    .image-frame img {
+        border-radius: var(--radius-xl);
+    }
+
+    .overlay-content i {
+        font-size: 2rem;
+        margin-bottom: var(--space-sm);
+    }
+
+    .overlay-content span {
+        font-size: 14px;
+    }
+
+    /* Floating icons - ocultos en móviles pequeños */
+    .floating-icons {
+        display: none;
+    }
+}
+
+/* Móviles grandes (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .about-section {
+        padding: var(--space-2xl) 0;
+    }
+
+    .about-container {
+        padding: 0 var(--space-lg);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-2xl);
+    }
+
+    .section-title {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+
+    .about-text {
+        gap: var(--space-xl);
+    }
+
+    .intro-text {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .about-description p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .skills-section h3 {
+        font-size: 22px;
+    }
+
+    .skill-category {
+        padding: var(--space-lg);
+    }
+
+    .skill-category h4 {
+        font-size: 15px;
+    }
+
+    .skill-tag {
+        font-size: 13px;
+        padding: var(--space-xs) var(--space-md);
+    }
+
+    .experience-section h3 {
+        font-size: 22px;
+    }
+
+    .experience-timeline {
+        padding-left: var(--space-lg);
+    }
+
+    .experience-item {
+        padding-left: var(--space-lg);
+    }
+
+    .experience-item::before {
+        left: -var(--space-lg);
+        top: 8px;
+    }
+
+    .experience-period {
+        font-size: 13px;
+    }
+
+    .experience-content h4 {
+        font-size: 17px;
+    }
+
+    .experience-content p {
+        font-size: 14px;
+    }
+
+    .about-visual {
+        order: -1;
+        margin-bottom: var(--space-xl);
+    }
+
+    .image-container {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .overlay-content i {
+        font-size: 2.5rem;
+    }
+
+    .overlay-content span {
+        font-size: 16px;
+    }
+
+    /* Floating icons reducidos */
+    .floating-icons {
+        display: block;
+    }
+
+    .tech-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+/* Tablets (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about-section {
+        padding: var(--space-3xl) 0;
+    }
+
+    .about-container {
+        padding: 0 var(--space-xl);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3xl);
+        align-items: start;
+    }
+
+    .about-visual {
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .image-container {
+        max-width: 380px;
+        margin: 0;
+    }
+
+    .intro-text {
+        font-size: 18px;
+    }
+
+    .about-description p {
+        font-size: 16px;
+    }
+
+    .skills-section h3 {
+        font-size: 24px;
+    }
+
+    .experience-section h3 {
+        font-size: 24px;
+    }
+
+    .tech-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+}
+
+/* Desktop (1025px+) */
+@media screen and (min-width: 1025px) {
+    .about-section {
+        padding: var(--space-3xl) 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-3xl);
+    }
+
+    .about-visual {
+        order: 0;
+    }
+
+    .image-container {
+        max-width: 400px;
+    }
+
+    .intro-text {
+        font-size: 20px;
+    }
+
+    .about-description p {
+        font-size: 16px;
+    }
+
+    .tech-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
+
+/* Landscape orientation para móviles */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .about-section {
+        padding: var(--space-lg) 0;
+    }
+
+    .section-header {
+        margin-bottom: var(--space-lg);
+    }
+
+    .section-title {
+        font-size: clamp(1.3rem, 3vw, 1.8rem);
+    }
+
+    .about-content {
+        gap: var(--space-lg);
+    }
+
+    .about-text {
+        gap: var(--space-md);
+    }
+
+    .about-intro {
+        margin-bottom: var(--space-sm);
+    }
+
+    .intro-text {
+        font-size: 14px;
+    }
+
+    .about-description p {
+        font-size: 13px;
+        margin-bottom: var(--space-sm);
+    }
+
+    .skills-section {
+        display: none;
+        /* Ocultar skills en landscape para ahorrar espacio */
+    }
+
+    .experience-section {
+        margin: var(--space-md) 0;
+    }
+
+    .experience-section h3 {
+        font-size: 18px;
+        margin-bottom: var(--space-sm);
+    }
+
+    .experience-item {
+        margin-bottom: var(--space-md);
+    }
+
+    .experience-content h4 {
+        font-size: 14px;
+    }
+
+    .experience-content p {
+        font-size: 12px;
+    }
+
+    .about-visual {
+        order: 0;
+        margin-bottom: 0;
+    }
+
+    .image-container {
+        max-width: 200px;
+    }
+
+    .floating-icons {
+        display: none;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .skill-tag:hover {
+        transform: none;
+    }
+
+    .image-frame:hover .image-overlay {
+        opacity: 0;
+    }
+
+    .image-frame:hover img {
+        transform: none;
+    }
+}
+
+/* Mejoras adicionales para asegurar visibilidad */
+.about-content {
+    min-height: 200px;
+}
+
+.about-text {
+    min-height: 100px;
+}
+
+/* Asegurar que el contenido sea visible */
+.about-section {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Fix para problemas de z-index */
+.about-container {
+    position: relative;
+    z-index: 2;
+}
+
+.about-content {
+    position: relative;
+    z-index: 3;
+}
