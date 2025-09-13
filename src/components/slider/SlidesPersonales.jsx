@@ -1,5 +1,6 @@
 import React from "react";
 import "./Slider.css";
+import "./Slider-responsive.css";
 
 const slidesInfo = [
   {

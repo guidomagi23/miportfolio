@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Slider.css";
+import "./Slider-responsive.css";
 import SlidesPersonales from "./SlidesPersonales";
 import SlidesCipax from "./SlidesCipax";
 
@@ -8,6 +9,12 @@ const Slider = () => {
   const [currentPersonalIndex, setCurrentPersonalIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef(null);
+
+  // Estados para el deslizamiento táctil
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [dragOffset, setDragOffset] = useState(0);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -48,6 +55,72 @@ const Slider = () => {
     setCurrentPersonalIndex(
       (prev) => (prev - 1 + SlidesPersonales.length) % SlidesPersonales.length
     );
+  };
+
+  // Funciones para el deslizamiento táctil
+  const minSwipeDistance = 50;
+
+  const onTouchStart = (e) => {
+    e.preventDefault();
+    setTouchEnd(null);
+    setTouchStart(e.targetTouches[0].clientX);
+    setIsDragging(true);
+    setDragOffset(0);
+  };
+
+  const onTouchMove = (e) => {
+    if (!isDragging || !touchStart) return;
+    e.preventDefault();
+
+    const currentTouch = e.targetTouches[0].clientX;
+    const diff = touchStart - currentTouch;
+    setDragOffset(diff);
+  };
+
+  const onTouchEndCipax = (e) => {
+    if (!touchStart || !isDragging) return;
+    e.preventDefault();
+
+    const currentTouch = e.changedTouches[0].clientX;
+    const distance = touchStart - currentTouch;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      nextCipaxSlide();
+    }
+
+    if (isRightSwipe) {
+      prevCipaxSlide();
+    }
+
+    setIsDragging(false);
+    setDragOffset(0);
+    setTouchStart(null);
+    setTouchEnd(null);
+  };
+
+  const onTouchEndPersonal = (e) => {
+    if (!touchStart || !isDragging) return;
+    e.preventDefault();
+
+    const currentTouch = e.changedTouches[0].clientX;
+    const distance = touchStart - currentTouch;
+    const isLeftSwipe = distance > minSwipeDistance;
+    const isRightSwipe = distance < -minSwipeDistance;
+
+    if (isLeftSwipe) {
+      nextPersonalSlide();
+    }
+
+    if (isRightSwipe) {
+      prevPersonalSlide();
+    }
+
+    setIsDragging(false);
+    setDragOffset(0);
+    setTouchStart(null);
+    setTouchEnd(null);
   };
 
   return (
@@ -100,12 +173,21 @@ const Slider = () => {
                 <i className="fas fa-chevron-left"></i>
               </button>
 
-              <div className="slider-content">
+              <div
+                className="slider-content"
+                onTouchStart={onTouchStart}
+                onTouchMove={onTouchMove}
+                onTouchEnd={onTouchEndCipax}
+              >
                 <div
                   className="slider-track"
                   style={{
-                    transform: `translateX(-${currentCipaxIndex * 100}%)`,
-                    transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+                    transform: `translateX(calc(-${
+                      currentCipaxIndex * 100
+                    }% + ${isDragging ? dragOffset : 0}px))`,
+                    transition: isDragging
+                      ? "none"
+                      : "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
                   }}
                 >
                   {SlidesCipax.map((slide, index) => (
@@ -162,12 +244,21 @@ const Slider = () => {
                 <i className="fas fa-chevron-left"></i>
               </button>
 
-              <div className="slider-content">
+              <div
+                className="slider-content"
+                onTouchStart={onTouchStart}
+                onTouchMove={onTouchMove}
+                onTouchEnd={onTouchEndPersonal}
+              >
                 <div
                   className="slider-track"
                   style={{
-                    transform: `translateX(-${currentPersonalIndex * 100}%)`,
-                    transition: "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
+                    transform: `translateX(calc(-${
+                      currentPersonalIndex * 100
+                    }% + ${isDragging ? dragOffset : 0}px))`,
+                    transition: isDragging
+                      ? "none"
+                      : "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
                   }}
                 >
                   {SlidesPersonales.map((slide, index) => (

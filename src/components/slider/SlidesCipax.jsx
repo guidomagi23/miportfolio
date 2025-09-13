@@ -1,5 +1,6 @@
 import React from "react";
 import "./Slider.css";
+import "./Slider-responsive.css";
 
 const slidesInfo = [
   {
@@ -83,8 +84,7 @@ const slidesInfo = [
   {
     title: "Mezcal",
     subtitle: "Comercio Internacional",
-    description:
-      "Sitio web para empresa de comercio internacional de mezcal.",
+    description: "Sitio web para empresa de comercio internacional de mezcal.",
     technologies: ["WordPress", "PHP", "CSS3"],
     techIcons: ["fab fa-wordpress", "fab fa-php", "fab fa-css3-alt"],
     color: "#a77f5a",
@@ -96,8 +96,7 @@ const slidesInfo = [
   {
     title: "Quantum Vibe",
     subtitle: "Consultoría Tecnológica",
-    description:
-      "Página web para cliente emprendedor.",
+    description: "Página web para cliente emprendedor.",
     technologies: ["Laravel", "MySQL", "JavaScript"],
     techIcons: ["fab fa-laravel", "fas fa-database", "fab fa-js-square"],
     color: "#165788",
@@ -122,8 +121,7 @@ const slidesInfo = [
   {
     title: "Tasty Taquitos",
     subtitle: "Restaurante Mexicano",
-    description:
-      "Sitio web para restaurante de comida mexicana.",
+    description: "Sitio web para restaurante de comida mexicana.",
     technologies: ["WordPress", "PHP", "Bootstrap"],
     techIcons: ["fab fa-wordpress", "fab fa-php", "fab fa-bootstrap"],
     color: "#006749",

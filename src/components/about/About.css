@@ -517,6 +517,34 @@
 
     .section-title {
         text-align: center;
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+    }
+
+    .section-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .skills-grid {
+        gap: var(--space-lg);
+    }
+
+    .skill-category {
+        padding: var(--space-lg);
+    }
+
+    .skill-category h3 {
+        font-size: 20px;
+        margin-bottom: var(--space-md);
+    }
+
+    .skill-list {
+        gap: var(--space-sm);
+    }
+
+    .skill-item {
+        padding: var(--space-sm) var(--space-md);
+        font-size: 14px;
     }
 
     .achievements-grid {
@@ -526,6 +554,14 @@
 
     .achievement-item {
         padding: var(--space-lg) var(--space-md);
+    }
+
+    .achievement-item h4 {
+        font-size: 18px;
+    }
+
+    .achievement-item p {
+        font-size: 14px;
     }
 
     .achievement-number {
@@ -557,20 +593,36 @@
 
     .experience-period {
         margin-left: var(--space-xs);
+        font-size: 13px;
     }
 
     .experience-content h4 {
         font-size: 16px;
+        margin-bottom: var(--space-xs);
     }
 
     .experience-content p {
         font-size: 13px;
+        line-height: 1.5;
     }
 }
 
 @media only screen and (max-width: 480px) {
+    .about-container {
+        padding: 0 var(--space-md);
+    }
+
     .section-header {
         margin-bottom: var(--space-2xl);
+    }
+
+    .section-title {
+        font-size: clamp(1.5rem, 3.5vw, 2rem);
+    }
+
+    .section-description {
+        font-size: 15px;
+        line-height: 1.5;
     }
 
     .skills-grid {
@@ -581,11 +633,106 @@
         padding: var(--space-md);
     }
 
+    .skill-category h3 {
+        font-size: 18px;
+    }
+
+    .skill-item {
+        padding: var(--space-xs) var(--space-sm);
+        font-size: 13px;
+    }
+
     .achievements-grid {
         grid-template-columns: 1fr;
+        gap: var(--space-sm);
     }
 
     .achievement-item {
         padding: var(--space-lg);
+    }
+
+    .achievement-item h4 {
+        font-size: 16px;
+    }
+
+    .achievement-item p {
+        font-size: 13px;
+    }
+
+    .achievement-number {
+        font-size: 1.8rem;
+    }
+
+    .tech-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .experience-timeline {
+        padding-left: var(--space-sm);
+    }
+
+    .experience-item {
+        padding-left: var(--space-sm);
+    }
+
+    .experience-item::before {
+        left: -var(--space-sm);
+        top: 10px;
+    }
+
+    .experience-content h4 {
+        font-size: 15px;
+    }
+
+    .experience-content p {
+        font-size: 12px;
+    }
+}
+
+/* Pantallas muy pequeñas (320px) */
+@media only screen and (max-width: 320px) {
+    .about-container {
+        padding: 0 var(--space-sm);
+    }
+
+    .section-title {
+        font-size: clamp(1.3rem, 3vw, 1.8rem);
+    }
+
+    .section-description {
+        font-size: 14px;
+    }
+
+    .skill-category {
+        padding: var(--space-sm);
+    }
+
+    .skill-category h3 {
+        font-size: 16px;
+    }
+
+    .skill-item {
+        padding: 6px var(--space-xs);
+        font-size: 12px;
+    }
+
+    .achievement-item {
+        padding: var(--space-md);
+    }
+
+    .achievement-item h4 {
+        font-size: 15px;
+    }
+
+    .achievement-item p {
+        font-size: 12px;
+    }
+
+    .tech-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
     }
 }

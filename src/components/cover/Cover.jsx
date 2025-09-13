@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../cover/Cover.css";
-import coverVideo from "../../media/coverVideo.mp4";
 import cvguido from "../../media/cvguido.pdf";
 
 const Cover = () => {
@@ -38,15 +37,7 @@ const Cover = () => {
 
   return (
     <div className="cover-container">
-      <video
-        className="cover-video"
-        src={coverVideo}
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-
+      
       <div className="cover-overlay"></div>
 
       <div className="cover-content">
@@ -104,13 +95,6 @@ const Cover = () => {
               <i className="fas fa-download"></i>
               <span>Descargar CV</span>
             </button>
-          </div>
-
-          <div className="scroll-indicator">
-            <div className="scroll-mouse">
-              <div className="scroll-wheel"></div>
-            </div>
-            <span>Scroll</span>
           </div>
         </div>
       </div>
