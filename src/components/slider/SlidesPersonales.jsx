@@ -8,8 +8,8 @@ const slidesInfo = [
     subtitle: "DJ & Productor Musical",
     description:
       "Página web personal para DJ y productor musical con diseño moderno y portfolio de trabajos",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    techIcons: ["fab fa-html5", "fab fa-css3-alt", "fab fa-js-square"],
+    technologies: ["React", "CSS", "JavaScript"],
+    techIcons: ["fab fa-react", "fab fa-css3-alt", "fab fa-js-square"],
     color: "#6366f1",
     gradient: "linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)",
     link: "https://github.com/guidomagi23/luciomagi",
@@ -34,8 +34,8 @@ const slidesInfo = [
     subtitle: "Sistema de Gestión v2.0",
     description:
       "Sistema completo de gestión para eventos estudiantiles con funcionalidades avanzadas",
-    technologies: ["PHP", "MySQL", "JavaScript"],
-    techIcons: ["fab fa-php", "fas fa-database", "fab fa-js-square"],
+    technologies: ["PHP", "MySQL", "JavaScript", "CSS", "HTML"],
+    techIcons: ["fab fa-php", "fas fa-database", "fab fa-js-square", "fab fa-css3-alt", "fab fa-html5"],
     color: "#dc2626",
     gradient: "linear-gradient(135deg, #dc2626 0%, #b91c1c 100%)",
     link: "https://github.com/guidomagi23/Bies22",
@@ -47,8 +47,8 @@ const slidesInfo = [
     subtitle: "Sistema de Gestión v1.0",
     description:
       "Primera versión del sistema de gestión para eventos estudiantiles de la universidad",
-    technologies: ["PHP", "MySQL", "Bootstrap"],
-    techIcons: ["fab fa-php", "fas fa-database", "fab fa-bootstrap"],
+    technologies: ["Java", "MySQL", "HTML", "Batchfile"],
+    techIcons: ["fab fa-java", "fas fa-database", "fab fa-html5", "fab fa-batchfile"],
     color: "#059669",
     gradient: "linear-gradient(135deg, #059669 0%, #047857 100%)",
     link: "https://github.com/guidomagi23/Bies20",
@@ -60,8 +60,8 @@ const slidesInfo = [
     subtitle: "Aplicación de Notas",
     description:
       "Aplicación web para gestión de notas personales con interfaz intuitiva y funcionalidades modernas",
-    technologies: ["JavaScript", "HTML5", "CSS3"],
-    techIcons: ["fab fa-js-square", "fab fa-html5", "fab fa-css3-alt"],
+    technologies: ["Java", "HTML5", "CSS3"],
+    techIcons: ["fab fa-java", "fab fa-html5", "fab fa-css3-alt"],
     color: "#ea580c",
     gradient: "linear-gradient(135deg, #ea580c 0%, #c2410c 100%)",
     link: "https://github.com/guidomagi23/Noties",
