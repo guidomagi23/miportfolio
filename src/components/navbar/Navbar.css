@@ -194,6 +194,7 @@
     right: 0;
     width: 300px;
     height: 100vh;
+    height: 100svh;
     background: var(--bg-secondary);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     transform: translateX(100%);
@@ -269,8 +270,19 @@
     font-size: 16px;
 }
 
+/* Desktop hard-enforcement (evita estados raros) */
+@media only screen and (min-width: 641px) {
+    .navbar-menu-desktop {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+}
+
 /* Responsive Design */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 640px) {
     .navbar-container {
         padding: 0 var(--space-lg);
         height: 70px;

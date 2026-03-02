@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import "../cover/Cover.css";
 import cvguido from "../../media/cvguido.pdf";
 
 const Cover = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [maxCols, setMaxCols] = useState(6);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,6 +36,27 @@ const Cover = () => {
     { name: "Java", icon: "fab fa-java" },
   ];
 
+  useEffect(() => {
+    const getMaxColsForWidth = (width) => {
+      if (width < 360) return 2;
+      if (width < 640) return 3;
+      if (width < 1024) return 4;
+      return 6;
+    };
+
+    const update = () => setMaxCols(getMaxColsForWidth(window.innerWidth));
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  const techCols = useMemo(() => {
+    const n = technologies.length;
+    const safeMax = Math.max(1, maxCols);
+    const rows = Math.ceil(n / safeMax);
+    return Math.ceil(n / rows);
+  }, [maxCols, technologies.length]);
+
   return (
     <div className="cover-container">
       
@@ -58,14 +80,15 @@ const Cover = () => {
 
           <p className="hero-description">
             Desarrollador Fullstack especializado en <strong>Laravel</strong>,{" "}
-            <strong>JavaScript</strong> y <strong>MySQL</strong>. Con
-            experiencia en <strong>WordPress</strong>, <strong>React</strong> y
-            metodologías ágiles como <strong>SCRUM</strong>. Comprometido con el
-            aprendizaje continuo.
+            <strong>JavaScript</strong> y <strong>MySQL</strong>. Con experiencia
+            en <strong>e-commerce</strong> (Bagisto), integración de{" "}
+            <strong>APIs externas</strong>, <strong>Docker</strong> y{" "}
+            <strong>SEO</strong>. También trabajé con <strong>Angular</strong> y
+            desarrollo de APIs con <strong>Python/Django</strong>.
           </p>
 
           <div className="tech-stack">
-            <div className="tech-grid">
+            <div className="tech-grid" style={{ "--tech-cols": techCols }}>
               {technologies.map((tech, index) => (
                 <div
                   key={tech.name}

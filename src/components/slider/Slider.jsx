@@ -12,9 +12,10 @@ const Slider = () => {
 
   // Estados para el deslizamiento táctil
   const [touchStart, setTouchStart] = useState(null);
-  const [touchEnd, setTouchEnd] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState(0);
+  const [draggingSlider, setDraggingSlider] = useState(null); // "cipax" | "personal" | null
+  const draggingSliderRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -60,17 +61,17 @@ const Slider = () => {
   // Funciones para el deslizamiento táctil
   const minSwipeDistance = 50;
 
-  const onTouchStart = (e) => {
-    e.preventDefault();
-    setTouchEnd(null);
+  const onTouchStart = (e, sliderId) => {
+    draggingSliderRef.current = sliderId;
+    setDraggingSlider(sliderId);
     setTouchStart(e.targetTouches[0].clientX);
     setIsDragging(true);
     setDragOffset(0);
   };
 
-  const onTouchMove = (e) => {
-    if (!isDragging || !touchStart) return;
-    e.preventDefault();
+  const onTouchMove = (e, sliderId) => {
+    if (!isDragging || !touchStart || draggingSliderRef.current !== sliderId)
+      return;
 
     const currentTouch = e.targetTouches[0].clientX;
     const diff = touchStart - currentTouch;
@@ -78,8 +79,8 @@ const Slider = () => {
   };
 
   const onTouchEndCipax = (e) => {
-    if (!touchStart || !isDragging) return;
-    e.preventDefault();
+    if (!touchStart || !isDragging || draggingSliderRef.current !== "cipax")
+      return;
 
     const currentTouch = e.changedTouches[0].clientX;
     const distance = touchStart - currentTouch;
@@ -97,12 +98,13 @@ const Slider = () => {
     setIsDragging(false);
     setDragOffset(0);
     setTouchStart(null);
-    setTouchEnd(null);
+    draggingSliderRef.current = null;
+    setDraggingSlider(null);
   };
 
   const onTouchEndPersonal = (e) => {
-    if (!touchStart || !isDragging) return;
-    e.preventDefault();
+    if (!touchStart || !isDragging || draggingSliderRef.current !== "personal")
+      return;
 
     const currentTouch = e.changedTouches[0].clientX;
     const distance = touchStart - currentTouch;
@@ -120,7 +122,8 @@ const Slider = () => {
     setIsDragging(false);
     setDragOffset(0);
     setTouchStart(null);
-    setTouchEnd(null);
+    draggingSliderRef.current = null;
+    setDraggingSlider(null);
   };
 
   return (
@@ -150,8 +153,8 @@ const Slider = () => {
             </div>
             <div className="category-description">
               <p>
-                Trabajé en proyectos increíbles como parte de un equipo
-                talentoso en{" "}
+                Participé en el desarrollo de aplicaciones web y sitios
+                corporativos en{" "}
                 <a
                   href="https://cipax.dev/"
                   target="_blank"
@@ -160,9 +163,7 @@ const Slider = () => {
                 >
                   Cipax.dev
                 </a>
-                , desarrollando soluciones que priorizan la innovación y los
-                resultados efectivos. Implementé aplicaciones web completas
-                utilizando Laravel, WordPress, HTML, CSS, Bootstrap y Git.
+                , utilizando Laravel, WordPress, HTML, CSS, Bootstrap y Git.
               </p>
             </div>
           </div>
@@ -175,8 +176,8 @@ const Slider = () => {
 
               <div
                 className="slider-content"
-                onTouchStart={onTouchStart}
-                onTouchMove={onTouchMove}
+                onTouchStart={(e) => onTouchStart(e, "cipax")}
+                onTouchMove={(e) => onTouchMove(e, "cipax")}
                 onTouchEnd={onTouchEndCipax}
               >
                 <div
@@ -184,7 +185,9 @@ const Slider = () => {
                   style={{
                     transform: `translateX(calc(-${
                       currentCipaxIndex * 100
-                    }% + ${isDragging ? dragOffset : 0}px))`,
+                    }% + ${
+                      isDragging && draggingSlider === "cipax" ? dragOffset : 0
+                    }px))`,
                     transition: isDragging
                       ? "none"
                       : "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",
@@ -229,11 +232,10 @@ const Slider = () => {
             </div>
             <div className="category-description">
               <p>
-                Durante mis estudios, desarrollo proyectos personales que me
-                permiten explorar y consolidar mis habilidades en diversas
-                tecnologías. Creé aplicaciones y soluciones utilizando
-                JavaScript, HTML, CSS, PHP y React, combinando diseño y
-                funcionalidades innovadoras.
+                Desarrollo proyectos personales para practicar y consolidar
+                habilidades en distintas tecnologías. Implementé aplicaciones y
+                soluciones con JavaScript, HTML, CSS, PHP y React, enfocadas en
+                diseño y funcionalidad.
               </p>
             </div>
           </div>
@@ -246,8 +248,8 @@ const Slider = () => {
 
               <div
                 className="slider-content"
-                onTouchStart={onTouchStart}
-                onTouchMove={onTouchMove}
+                onTouchStart={(e) => onTouchStart(e, "personal")}
+                onTouchMove={(e) => onTouchMove(e, "personal")}
                 onTouchEnd={onTouchEndPersonal}
               >
                 <div
@@ -255,7 +257,11 @@ const Slider = () => {
                   style={{
                     transform: `translateX(calc(-${
                       currentPersonalIndex * 100
-                    }% + ${isDragging ? dragOffset : 0}px))`,
+                    }% + ${
+                      isDragging && draggingSlider === "personal"
+                        ? dragOffset
+                        : 0
+                    }px))`,
                     transition: isDragging
                       ? "none"
                       : "transform 0.5s cubic-bezier(0.4, 0, 0.2, 1)",

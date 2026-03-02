@@ -126,6 +126,16 @@
         line-height: 1.5;
     }
 
+    .experience-list {
+        font-size: 13px;
+        line-height: 1.5;
+        padding-left: 1rem;
+    }
+
+    .experience-list li {
+        margin-bottom: 6px;
+    }
+
     /* About Visual */
     .about-visual {
         order: -1;

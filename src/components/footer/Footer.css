@@ -224,6 +224,13 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .footer {
         padding: var(--space-xl) 0 var(--space-md) 0;
@@ -249,7 +256,7 @@
     }
 
     .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: var(--space-md);
         max-width: 100%;
     }
